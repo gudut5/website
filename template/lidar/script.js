@@ -2,13 +2,6 @@ document.addEventListener('DOMContentLoaded', function() {
     window.addEventListener('scroll', myFunctionStepBg);
     var bodyEl = document.getElementsByTagName("body")[0];
     var step01 = true, step02 = true, step03 = true, step04 = true, step05 = true, step06 = true, step07 = true, step08 = true, step09 = true, step10 = true;
-    function hideBg(){
-      var elBg = document.getElementsByClassName("isBg");
-      var totalBg = elBg.length;
-      for (let index = 0; index < totalBg; index++) {
-        elBg[index].classList.add("removeBg");
-      }
-    }
     function myFunctionStepBg() {
       var bg1 = document.getElementById("step01"),topBg1 = bg1.offsetTop;
       var bg2 = document.getElementById("step02-1"),topBg2 = bg2.offsetTop;
@@ -27,12 +20,13 @@ document.addEventListener('DOMContentLoaded', function() {
       } else {
         bg1.classList.remove("removeBg");
       }
-      if (window.pageYOffset >= topBgLast) {bgLast.classList.add("bg10");} else {bgLast.classList.remove("bg10");}
+      if (window.pageYOffset >= topBgLast) {
+        bgLast.classList.remove("hide");
+      }
       if (window.pageYOffset >= topBg1 && window.pageYOffset < topBg2) {
-        if(step01){console.log('step1')
+        if(step01){
           document.getElementById("step01-bg").classList.remove("hide");
           step01 = false;
-          hideBg()
         }
       }else{
         step01 = true;
@@ -43,7 +37,6 @@ document.addEventListener('DOMContentLoaded', function() {
           document.getElementById("step02-1-bg").classList.remove("hide");
           document.getElementById("step02-1-info").classList.remove("hide");
           step02 = false;
-          hideBg()
         }
       }else{
         step02 = true;
@@ -63,7 +56,6 @@ document.addEventListener('DOMContentLoaded', function() {
         if(step04){
           document.getElementById("step03-1-bg").classList.remove("hide");
           step04 = false;
-          hideBg()
         }
       }else{
         step04 = true;
@@ -73,7 +65,6 @@ document.addEventListener('DOMContentLoaded', function() {
         if(step05){
           document.getElementById("step03-2-info").classList.remove("hide");
           step05 = false;
-          hideBg()
         }
       }else{
         step05 = true;
@@ -83,7 +74,6 @@ document.addEventListener('DOMContentLoaded', function() {
         if(step06){
           document.getElementById("step04-1-bg").classList.remove("hide");
           step06 = false;
-          hideBg()
         }
       }else{
         step06 = true;
@@ -93,7 +83,6 @@ document.addEventListener('DOMContentLoaded', function() {
         if(step07){
           document.getElementById("step04-2-info").classList.remove("hide");
           step07 = false;
-          hideBg()
         }
       }else{
         step07 = true;
@@ -103,7 +92,6 @@ document.addEventListener('DOMContentLoaded', function() {
         if(step08){
           document.getElementById("step05-1-bg").classList.remove("hide");
           step08 = false;
-          hideBg()
         }
       }else{
         step08 = true;
@@ -113,7 +101,6 @@ document.addEventListener('DOMContentLoaded', function() {
         if(step09){
           document.getElementById("step05-2-bg").classList.remove("hide");
           step09 = false;
-          hideBg()
         }
       }else{
         step09 = true;
@@ -123,7 +110,6 @@ document.addEventListener('DOMContentLoaded', function() {
         if(step10){
           document.getElementById("step05-3-bg").classList.remove("hide");
           step10 = false;
-          hideBg()
         }
       }else{
         step10 = true;
