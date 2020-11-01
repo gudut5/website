@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', function() {
     window.addEventListener('scroll', myFunctionStepBg);
     var bodyEl = document.getElementsByTagName("body")[0];
-    var step01 = true, step02 = true, step03 = true, step04 = true, step05 = true, step06 = true, step07 = true, step08 = true, step09 = true, step10 = true;
+    var step01 = true, step02 = true, step03 = true, step031 = true, step04 = true, step05 = true, step06 = true, step07 = true, step08 = true, step09 = true, step10 = true;
     function myFunctionStepBg() {
       var bg1 = document.getElementById("step01"),topBg1 = bg1.offsetTop;
       var bg2 = document.getElementById("step02-1"),topBg2 = bg2.offsetTop;
@@ -41,6 +41,15 @@ document.addEventListener('DOMContentLoaded', function() {
       }else{
         step02 = true;
         document.getElementById("step02-1-bg").classList.add("hide");
+        document.getElementById("step02-1-info").classList.add("hide");
+      }
+      if (window.pageYOffset >= topBg2 && window.pageYOffset < topBg3) {
+        if(step031){
+          document.getElementById("step02-1-info").classList.remove("hide");
+          step031 = false;
+        }
+      }else{
+        step031 = true;
         document.getElementById("step02-1-info").classList.add("hide");
       }
       if (window.pageYOffset >= topBg3 && window.pageYOffset < topBg4) {
