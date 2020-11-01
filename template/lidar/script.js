@@ -22,97 +22,112 @@ document.addEventListener('DOMContentLoaded', function() {
       var bg10 = document.getElementById("step05-3"),topBg10 = bg10.offsetTop;
       var bgLast = document.getElementById("step05-4"),topBgLast = bgLast.offsetTop;
       
-      if (window.pageYOffset >= topBg1) {bg1.classList.add("removeBg");} else {bg1.classList.remove("removeBg");}
+      if (window.pageYOffset >= topBg1) {
+        bg1.classList.add("removeBg");
+      } else {
+        bg1.classList.remove("removeBg");
+      }
       if (window.pageYOffset >= topBgLast) {bgLast.classList.add("bg10");} else {bgLast.classList.remove("bg10");}
       if (window.pageYOffset >= topBg1 && window.pageYOffset < topBg2) {
-        if(step01){
-          bodyEl.style.backgroundImage =  'url(https://historiadotid.s3.ap-southeast-1.amazonaws.com/lidar/01.jpg)';
+        if(step01){console.log('step1')
+          document.getElementById("step01-bg").classList.remove("hide");
           step01 = false;
           hideBg()
         }
       }else{
         step01 = true;
+        document.getElementById("step01-bg").classList.add("hide");
       }
-      if (window.pageYOffset >= topBg2 && window.pageYOffset < topBg3) {
+      if (window.pageYOffset >= topBg2 && window.pageYOffset < topBg4) {
         if(step02){
-          bodyEl.style.backgroundImage =  'url(https://historiadotid.s3.ap-southeast-1.amazonaws.com/lidar/02-1.jpg)';
+          document.getElementById("step02-1-bg").classList.remove("hide");
+          document.getElementById("step02-1-info").classList.remove("hide");
           step02 = false;
           hideBg()
         }
       }else{
         step02 = true;
+        document.getElementById("step02-1-bg").classList.add("hide");
+        document.getElementById("step02-1-info").classList.add("hide");
       }
       if (window.pageYOffset >= topBg3 && window.pageYOffset < topBg4) {
         if(step03){
-          bodyEl.style.backgroundImage =  'url(https://historiadotid.s3.ap-southeast-1.amazonaws.com/lidar/02-2.jpg)';
+          document.getElementById("step02-2-info").classList.remove("hide");
           step03 = false;
-          hideBg()
         }
       }else{
         step03 = true;
+        document.getElementById("step02-2-info").classList.add("hide");
       }
-      if (window.pageYOffset >= topBg4 && window.pageYOffset < topBg5) {
+      if (window.pageYOffset >= topBg4 && window.pageYOffset < topBg6) {
         if(step04){
-          bodyEl.style.backgroundImage =  'url(https://historiadotid.s3.ap-southeast-1.amazonaws.com/lidar/03-1.jpg)';
+          document.getElementById("step03-1-bg").classList.remove("hide");
           step04 = false;
           hideBg()
         }
       }else{
         step04 = true;
+        document.getElementById("step03-1-bg").classList.add("hide");
       }
       if (window.pageYOffset >= topBg5 && window.pageYOffset < topBg6) {
         if(step05){
-          bodyEl.style.backgroundImage =  'url(https://historiadotid.s3.ap-southeast-1.amazonaws.com/lidar/03-2.jpg)';
+          document.getElementById("step03-2-info").classList.remove("hide");
           step05 = false;
           hideBg()
         }
       }else{
         step05 = true;
+        document.getElementById("step03-2-info").classList.add("hide");
       }
-      if (window.pageYOffset >= topBg6 && window.pageYOffset < topBg7) {
+      if (window.pageYOffset >= topBg6 && window.pageYOffset < topBg8) {
         if(step06){
-          bodyEl.style.backgroundImage =  'url(https://historiadotid.s3.ap-southeast-1.amazonaws.com/lidar/04-1.jpg)';
+          document.getElementById("step04-1-bg").classList.remove("hide");
           step06 = false;
           hideBg()
         }
       }else{
         step06 = true;
+        document.getElementById("step04-1-bg").classList.add("hide");
       }
       if (window.pageYOffset >= topBg7 && window.pageYOffset < topBg8) {
         if(step07){
-          bodyEl.style.backgroundImage =  'url(https://historiadotid.s3.ap-southeast-1.amazonaws.com/lidar/04-2.jpg)';
+          document.getElementById("step04-2-info").classList.remove("hide");
           step07 = false;
           hideBg()
         }
       }else{
         step07 = true;
+        document.getElementById("step04-2-info").classList.add("hide");
       }
       if (window.pageYOffset >= topBg8 && window.pageYOffset < topBg9) {
         if(step08){
-          bodyEl.style.backgroundImage =  'url(https://historiadotid.s3.ap-southeast-1.amazonaws.com/lidar/05-1.jpg)';
+          document.getElementById("step05-1-bg").classList.remove("hide");
           step08 = false;
           hideBg()
         }
       }else{
         step08 = true;
+        document.getElementById("step05-1-bg").classList.add("hide");
       }
       if (window.pageYOffset >= topBg9 && window.pageYOffset < topBg10) {
         if(step09){
-          bodyEl.style.backgroundImage =  'url(https://historiadotid.s3.ap-southeast-1.amazonaws.com/lidar/05-2.jpg)';
+          document.getElementById("step05-2-bg").classList.remove("hide");
           step09 = false;
           hideBg()
         }
       }else{
         step09 = true;
+        document.getElementById("step05-2-bg").classList.add("hide");
       }
       if (window.pageYOffset >= topBg10 && window.pageYOffset < topBgLast) {
         if(step10){
-          bodyEl.style.backgroundImage =  'url(https://historiadotid.s3.ap-southeast-1.amazonaws.com/lidar/05-3.jpg)';
+          document.getElementById("step05-3-bg").classList.remove("hide");
           step10 = false;
           hideBg()
         }
       }else{
         step10 = true;
+        document.getElementById("step05-3-bg").classList.add("hide");
       }
     }
     document.getElementById("shareFB").onclick = function(){

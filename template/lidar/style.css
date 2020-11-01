@@ -5,17 +5,11 @@ body, html {
     color: #777;
   }
   body{
-      background-image: url("https://historiadotid.s3.ap-southeast-1.amazonaws.com/lidar/01.jpg");
       background-attachment: fixed;
       background-position: center;
       background-repeat: no-repeat;
       background-size: contain;
       background-color: #D9D8C6;
-      background-repeat: no-repeat;
-      -webkit-transition: background-image 0.5s ease-in-out;
-      -moz-transition: background-image 0.5s ease-in-out;
-      -o-transition: background-image 0.5s ease-in-out;
-      transition: background-image 0.5s ease-in-out;
   }
   #top-content-space{
       height: 0;
@@ -34,51 +28,131 @@ body, html {
     background-size: contain;
     min-height: 100%;
     height: 60vh;
-    -webkit-transition: background-image 0.5s ease-in-out;
-    -moz-transition: background-image 0.5s ease-in-out;
-    -o-transition: background-image 0.5s ease-in-out;
-    transition: background-image 0.5s ease-in-out;
+  }
+  .bgimg .bgs{
+    position: fixed;
+    opacity: 1;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    min-height: 100%;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    -webkit-transition: opacity 0.5s ease-in-out;
+    -moz-transition: opacity 0.5s ease-in-out;
+    -o-transition: opacity 0.5s ease-in-out;
+    transition: opacity 0.5s ease-in-out;
+    z-index: 1;
+    background-color: #D9D8C6;
+  }
+  .bgimg .bgs.hide{
+      opacity: 0;
+      z-index: -1;
+      -webkit-transition: opacity 0.5s ease-in-out;
+    -moz-transition: opacity 0.5s ease-in-out;
+    -o-transition: opacity 0.5s ease-in-out;
+    transition: opacity 0.5s ease-in-out;
   }
   .bgimg.removeBg, .bgimg.bg1.removeBg{
     background-image: none;
-    background-color: transparent !important;
-    opacity: 0 !important;
+    background-color: transparent;
   }
   .bgimg.bg1, .bgimg.bg10{
     height: 100vh;
     background-color: #D9D8C6;
   }
-  .bg1{
+  .bgimg.bg1,
+  .bgimg .bgs.bg1{
     background-image: url("https://historiadotid.s3.ap-southeast-1.amazonaws.com/lidar/01.jpg");
   }
-  .bg2{
+  .bgimg.bg2,
+  .bgimg .bgs.bg2{
     background-image: url("https://historiadotid.s3.ap-southeast-1.amazonaws.com/lidar/02-1.jpg");
   }
-  .bg3{
+  .bgimg.bg3,
+  .bgimg .bgs.bg3{
     background-image: url("https://historiadotid.s3.ap-southeast-1.amazonaws.com/lidar/02-2.jpg");
   }
-  .bg4{
+  .bgimg.bg4,
+  .bgimg .bgs.bg4{
     background-image: url("https://historiadotid.s3.ap-southeast-1.amazonaws.com/lidar/03-1.jpg");
   }
-  .bg5{
+  .bgimg.bg5,
+  .bgimg .bgs.bg5{
     background-image: url("https://historiadotid.s3.ap-southeast-1.amazonaws.com/lidar/03-2.jpg");
   }
-  .bg6{
+  .bgimg.bg6,
+  .bgimg .bgs.bg6{
     background-image: url("https://historiadotid.s3.ap-southeast-1.amazonaws.com/lidar/04-1.jpg");
   }
-  .bg7{
+  .bgimg.bg7,
+  .bgimg .bgs.bg7{
     background-image: url("https://historiadotid.s3.ap-southeast-1.amazonaws.com/lidar/04-2.jpg");
   }
-  .bg8{
+  .bgimg.bg8,
+  .bgimg .bgs.bg8{
     background-image: url("https://historiadotid.s3.ap-southeast-1.amazonaws.com/lidar/05-1.jpg");
   }
-  .bg9{
+  .bgimg.bg9,
+  .bgimg .bgs.bg9{
     background-image: url("https://historiadotid.s3.ap-southeast-1.amazonaws.com/lidar/05-2.jpg");
   }
-  .bg10{
+  .bgimg.bg10,
+  .bgimg .bgs.bg10{
     background-image: url("https://historiadotid.s3.ap-southeast-1.amazonaws.com/lidar/05-3.jpg");
   }
-  
+  .info-text{
+      display: block;
+      position: fixed;
+      min-height: 150px;
+      top: 0;
+      z-index: 4;
+      opacity: 1;
+      background-color: #D9D8C6;
+      color: #000000;
+      max-width: 400px;
+      -webkit-transition: opacity 0.5s ease-in-out;
+    -moz-transition: opacity 0.5s ease-in-out;
+    -o-transition: opacity 0.5s ease-in-out;
+    transition: opacity 0.5s ease-in-out;
+  }
+  #step02-1-info{
+      z-index: 3;
+  }
+  .info-text.hide{
+      z-index: -1;
+      opacity: 0;
+      -webkit-transition: opacity 0.5s ease-in-out;
+    -moz-transition: opacity 0.5s ease-in-out;
+    -o-transition: opacity 0.5s ease-in-out;
+    transition: opacity 0.5s ease-in-out;
+  }
+  .info-text h2{
+    line-height: 1em;
+    text-align: center;
+    font-size: 1.4em;
+    font-weight: 700;
+  }
+  .info-text p{
+    line-height: 1.2em;
+    display: flex;
+  }
+  .info-text p span.number{
+    text-align: center;
+    height: 30px;
+    width: 30px;
+    flex-shrink: 0;
+    flex-grow: 0;
+    line-height: 30px;
+    background-color: #FAAF40;
+    border-radius: 20px;
+    border: 2px solid #000000;
+    font-size: 1.3em;
+    font-weight: 600;
+    margin-right: 10px;
+  }
   h3 {
     letter-spacing: 5px;
     text-transform: uppercase;
@@ -91,7 +165,6 @@ body, html {
       color: #777;
       background-color:white;
       text-align:center;
-      width: 100%;
       margin: 0 auto;
       padding: 20px 0;
   }
@@ -283,3 +356,24 @@ body, html {
           display: inline-block;
       }
   }
+  @media (max-width: 768px){
+    .info-text{
+        top: 0;
+        left: 0;
+        padding: 10px 20px;
+        padding-top: 0;
+      }
+      #step02-1-info{
+        min-width: calc(100vw - 40px);
+    }
+  }
+  @media (min-width: 768px){
+    .info-text{
+        top: 0;
+        left: 400px;
+        padding: 20px;
+      }
+      #step02-1-info{
+        min-width: 400px;
+    }
+}
