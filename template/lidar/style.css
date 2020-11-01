@@ -1,0 +1,285 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    font: 400 15px/1.8 "Lato", sans-serif;
+    color: #777;
+  }
+  body{
+      background-image: url("https://historiadotid.s3.ap-southeast-1.amazonaws.com/lidar/01.jpg");
+      background-attachment: fixed;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-color: #D9D8C6;
+      background-repeat: no-repeat;
+      -webkit-transition: background-image 0.5s ease-in-out;
+      -moz-transition: background-image 0.5s ease-in-out;
+      -o-transition: background-image 0.5s ease-in-out;
+      transition: background-image 0.5s ease-in-out;
+  }
+  #top-content-space{
+      height: 0;
+  }
+  .header-navigation{
+      position: static;
+  }
+  header#header{
+      height: 70px;
+  }
+  .bgimg{
+    position: relative;
+    opacity: 1;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    min-height: 100%;
+    height: 60vh;
+    -webkit-transition: background-image 0.5s ease-in-out;
+    -moz-transition: background-image 0.5s ease-in-out;
+    -o-transition: background-image 0.5s ease-in-out;
+    transition: background-image 0.5s ease-in-out;
+  }
+  .bgimg.removeBg, .bgimg.bg1.removeBg{
+    background-image: none;
+    background-color: transparent !important;
+    opacity: 0 !important;
+  }
+  .bgimg.bg1, .bgimg.bg10{
+    height: 100vh;
+    background-color: #D9D8C6;
+  }
+  .bg1{
+    background-image: url("https://historiadotid.s3.ap-southeast-1.amazonaws.com/lidar/01.jpg");
+  }
+  .bg2{
+    background-image: url("https://historiadotid.s3.ap-southeast-1.amazonaws.com/lidar/02-1.jpg");
+  }
+  .bg3{
+    background-image: url("https://historiadotid.s3.ap-southeast-1.amazonaws.com/lidar/02-2.jpg");
+  }
+  .bg4{
+    background-image: url("https://historiadotid.s3.ap-southeast-1.amazonaws.com/lidar/03-1.jpg");
+  }
+  .bg5{
+    background-image: url("https://historiadotid.s3.ap-southeast-1.amazonaws.com/lidar/03-2.jpg");
+  }
+  .bg6{
+    background-image: url("https://historiadotid.s3.ap-southeast-1.amazonaws.com/lidar/04-1.jpg");
+  }
+  .bg7{
+    background-image: url("https://historiadotid.s3.ap-southeast-1.amazonaws.com/lidar/04-2.jpg");
+  }
+  .bg8{
+    background-image: url("https://historiadotid.s3.ap-southeast-1.amazonaws.com/lidar/05-1.jpg");
+  }
+  .bg9{
+    background-image: url("https://historiadotid.s3.ap-southeast-1.amazonaws.com/lidar/05-2.jpg");
+  }
+  .bg10{
+    background-image: url("https://historiadotid.s3.ap-southeast-1.amazonaws.com/lidar/05-3.jpg");
+  }
+  
+  h3 {
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    font: 28px "Lato", sans-serif;
+    color: #111;
+    line-height: 1.5em;
+    margin-top: 40px;
+  }
+  .desc{
+      color: #777;
+      background-color:white;
+      text-align:center;
+      width: 100%;
+      margin: 0 auto;
+      padding: 20px 0;
+  }
+  .desc p{
+      font-size: 1.2em;
+  }
+  .link-footer a {
+      text-decoration-line: none;
+      text-decoration-style: initial;
+      text-decoration-color: initial;
+      color: rgb(51, 51, 51);
+  }
+  
+  
+  .microiste-footer {
+      background-color: rgb(230, 230, 230);
+  }
+  
+  .footer-container {
+      display: flex;
+      padding-top: 15px;
+      padding-right: 40px;
+      padding-bottom: 15px;
+      padding-left: 40px;
+      font-size: 0.8em;
+      justify-content: space-between;
+  }
+  
+  .info-footer {
+      max-width: 350px;
+      margin-top: 0px;
+      margin-right: 10px;
+      margin-bottom: 0px;
+      margin-left: 10px;
+      text-align: right;
+  }
+  .footer-icon-socmed {
+      display: inline-block;
+      width: 30px;
+  }
+  .footer-icon-socmed.m-right-10{
+      margin-right: 10px;
+  }
+  .socmed-footer {
+      width: 160px;
+  }
+  
+  .link-footer {
+      width: 45%;
+  }
+  
+  .bookmark-icon {
+      width: 35px;
+      margin-right: 15px;
+      cursor: pointer;
+  }
+  .bagikan-socmed {
+      line-height: 26px;
+      font-size: 10px;
+      margin-right: 10px;
+  }
+  .full-height {
+      display: inline-block;
+  }
+  .article-share{
+      margin: 20px 0;
+  }
+  .top-article-share{
+      margin: 0;
+      padding: 0;
+  }
+  
+  @media (max-width: 992px) {
+  
+      .footer-container {
+          padding-top: 15px;
+          padding-right: 0px;
+          padding-bottom: 15px;
+          padding-left: 0px;
+          max-width: 700px;
+          margin-top: 0px;
+          margin-right: auto;
+          margin-bottom: 0px;
+          margin-left: auto;
+      }
+  
+      .info-footer {
+          max-width: 200px;
+          margin-top: 0px;
+          margin-right: 10px;
+          margin-bottom: 0px;
+          margin-left: 0px;
+      }
+  
+      .socmed-footer {
+          width: 200px;
+      }
+  
+      .link-footer {
+          width: auto;
+      }
+  
+  }
+  
+  @media (min-width: 756px) {
+      .link-footer a::after {
+          content: "\2022";
+          padding-right: 5px;
+          padding-left: 5px;
+      }
+  
+      .last-footer-link::after {
+          content: "";
+      }
+  
+      .link-footer a.last-footer-link::after {
+          content: "";
+      }
+  
+  }
+  
+  @media (max-width: 480px) {
+      .footer-container {
+          padding-top: 30px;
+          padding-right: 20px;
+          padding-bottom: 30px;
+          padding-left: 20px;
+          display: block;
+      }
+  
+      .socmed-footer {
+          width: 100%;
+          margin-top: 0px;
+          margin-right: 0px;
+          margin-bottom: 10px;
+          margin-left: 0px;
+      }
+  
+      .link-footer {
+          width: 100%;
+          margin-top: 0px;
+          margin-right: 0px;
+          margin-bottom: 10px;
+          margin-left: 0px;
+      }
+  
+      .info-footer {
+          padding-top: 0px;
+          padding-right: 0px;
+          padding-bottom: 10px;
+          padding-left: 0px;
+          text-align: left;
+          max-width: 100%;
+      }
+  
+      .last-footer-link {
+          font-size: 14px;
+      }
+      .desc-container{
+          margin: 0 20px;
+          width: auto;
+      }
+      .caption-container {
+        width: 100%;
+        margin: 0 auto;
+      }
+      .text-container{
+          width: 80%;
+          margin: 0 5%;
+      }
+      .link-footer a {
+          display: block;
+          line-height: 2.5em;
+      }
+  }
+  @media (min-width: 480px){
+      .desc-container{
+          margin: 0 auto;
+          width: 800px;
+      }
+      .caption-container {
+        width: 800px;
+        margin: 0 auto;
+      }
+      .text-container{
+          width: 50%;
+      }
+      .link-footer a {
+          display: inline-block;
+      }
+  }
