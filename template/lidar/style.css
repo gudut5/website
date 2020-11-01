@@ -112,7 +112,7 @@ body, html {
       opacity: 1;
       background-color: #D9D8C6;
       color: #000000;
-      max-width: 400px;
+      max-width: 500px;
       -webkit-transition: opacity 0.5s ease-in-out;
     -moz-transition: opacity 0.5s ease-in-out;
     -o-transition: opacity 0.5s ease-in-out;
@@ -374,6 +374,6 @@ body, html {
         padding: 20px;
       }
       #step02-1-info{
-        min-width: 400px;
+        min-width: 500px;
     }
 }
