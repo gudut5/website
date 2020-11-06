@@ -15,7 +15,7 @@ function setCoverImg(imgUrl){
 }
 function getKoleksi(koleksi){
     var request = new XMLHttpRequest();
-    request.open('GET', 'data.json', true);
+    request.open('GET', 'assets/data/data.json', true);
     
     request.onload = function() {
       if (request.status >= 200 && request.status < 400) {
