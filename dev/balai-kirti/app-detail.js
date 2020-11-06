@@ -38,6 +38,7 @@ var nextCollection = document.querySelectorAll('a.button-link.right, .nav-bar-ri
 for (let i = 0; i < nextCollection.length; i++) {
     nextCollection[i].addEventListener("click", function() {
         if(selectedCollection < 25){
+            document.querySelector('.overlay').style.display = "";
             selectedCollection += 1;
             updatePage(selectedCollection);
         }
@@ -46,6 +47,7 @@ for (let i = 0; i < nextCollection.length; i++) {
 for (let i = 0; i < previousCollection.length; i++) {
     previousCollection[i].addEventListener("click", function() {
         if(selectedCollection < 25){
+            document.querySelector('.overlay').style.display = "";
             selectedCollection += 1;
             updatePage(selectedCollection);
         }
@@ -71,6 +73,11 @@ function updatePage(collection){
             }else{
                 setCoverImg(data.artikel[i].cover_mobile);
             }
+            coverImg.addEventListener('load', function(){
+                document.querySelector('.overlay').style.display = "none";
+            })
+            
+            
         }
     }
 }
