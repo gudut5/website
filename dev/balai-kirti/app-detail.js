@@ -1,6 +1,7 @@
 const urlParams = new URLSearchParams(window.location.search);
-const myParam = urlParams.get('koleksi');
-var selectedCollection = parseInt(myParam);
+var myParam = urlParams.get('koleksi');
+var selectedCollection = 1;
+if(!isNaN(myParam)) selectedCollection = parseInt(myParam);
 var data;
 var intViewportWidth = window.innerWidth;
 var numberElement = document.querySelector('#numberCollection');
