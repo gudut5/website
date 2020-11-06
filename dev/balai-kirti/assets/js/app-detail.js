@@ -6,7 +6,7 @@ var data;
 var intViewportWidth = window.innerWidth;
 var numberElement = document.querySelector('#numberCollection');
 var coverImg = document.getElementById('imgSrc');
-getKoleksi(myParam)
+getKoleksi(selectedCollection)
 document.addEventListener('DOMContentLoaded', function() {
     
 });
