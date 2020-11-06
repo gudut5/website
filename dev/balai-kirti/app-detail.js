@@ -15,7 +15,7 @@ function setCoverImg(imgUrl){
 }
 function getKoleksi(koleksi){
     var request = new XMLHttpRequest();
-    request.open('GET', 'https://historiadotid.s3.ap-southeast-1.amazonaws.com/balai_kirti/data.json', true);
+    request.open('GET', 'data.json', true);
     
     request.onload = function() {
       if (request.status >= 200 && request.status < 400) {
