@@ -264,10 +264,10 @@ span.arrow:hover{
     opacity: .9;
 }
 span.arrow.left{
-    background-image: url(https://historiadotid.s3.ap-southeast-1.amazonaws.com/balai_kirti/left-64.png);
+    background-image: url(assets/img/left-64.png);
 }
 span.arrow.right{
-    background-image: url(https://historiadotid.s3.ap-southeast-1.amazonaws.com/balai_kirti/right-64.png);
+    background-image: url(assets/img/right-64.png);
 }
 span.arrow.w64{
     width: 64px;
