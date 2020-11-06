@@ -15,7 +15,7 @@ function setCoverImg(imgUrl){
 }
 function getKoleksi(koleksi){
     var request = new XMLHttpRequest();
-    request.open('GET', 'data.json', true);
+    request.open('GET', 'https://historiadotid.s3.ap-southeast-1.amazonaws.com/balai_kirti/data.json', true);
     
     request.onload = function() {
       if (request.status >= 200 && request.status < 400) {
@@ -33,21 +33,24 @@ function getKoleksi(koleksi){
       
     request.send();
 }
-var previousCollection = document.querySelector('a.button-link.left');
-var nextCollection = document.querySelector('a.button-link.right');
-nextCollection.addEventListener('click', function(event) {
-    if(selectedCollection < 25){
-        selectedCollection += 1;
-        updatePage(selectedCollection);
-    }
-    
-});
-previousCollection.addEventListener('click', function(event) {
-    if(selectedCollection > 1){
-        selectedCollection -= 1;
-        updatePage(selectedCollection);
-    }
-});
+var previousCollection = document.querySelectorAll('a.button-link.left, .nav-bar-left');
+var nextCollection = document.querySelectorAll('a.button-link.right, .nav-bar-right');
+for (let i = 0; i < nextCollection.length; i++) {
+    nextCollection[i].addEventListener("click", function() {
+        if(selectedCollection < 25){
+            selectedCollection += 1;
+            updatePage(selectedCollection);
+        }
+    });
+}
+for (let i = 0; i < previousCollection.length; i++) {
+    previousCollection[i].addEventListener("click", function() {
+        if(selectedCollection < 25){
+            selectedCollection += 1;
+            updatePage(selectedCollection);
+        }
+    });
+}
 function updatePage(collection){
     numberElement.innerHTML = collection;
     document.title = "Balai Kirti Koleksi "+collection;
