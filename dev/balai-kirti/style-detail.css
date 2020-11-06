@@ -19,13 +19,16 @@ header{
     z-index: 999;
 }
 .overlay{
-    background-color: rgba(255,255,255,0.3);
+    background-color: rgba(0,0,0,0.7);
     position: fixed;
     width: 100vw;
     height: 100vh;
-    z-index: 999;
+    z-index: 9999;
     left: 0;
     right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .bg-black{
     background-color: #000000;
