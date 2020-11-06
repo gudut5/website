@@ -1,0 +1,115 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Balai Kirti Koleksi 1</title>
+    <link rel="stylesheet" href="style-detail.css" type="text/css">
+</head>
+<body>
+    <div class="bg-black">
+        <header>
+            <div class="slide-left-layout only-mobile">
+                <div class="slide-header-text-small">MUSEUM<br>KEPRESIDENAN<br>REPUBLIK INDONESIA</div>
+                <div class="slide-header-text-large">BALAI<br>KIRTI</div>
+            </div>
+            <div class="welcome-text">
+                <div class="header-container">
+                    <a href="/" class="logo">logo</a>
+                    <ul class="detail-nav only-desktop">
+                        <li><a href="#sukarno" class="selected">SUKARNO</a></li>
+                        <li><a href="#tentang-kami">TENTANG KAMI</a></li>
+                        <li class="ext-link"><a href="#visual-museum">VIRTUAL MUSEUM</a></li>
+                    </ul>
+                    <a href="#" class="only-mobile ext-link-top">Virtual Museum</a>
+                </div>
+            </div>
+            <nav class="only-desktop">
+                <ul>
+                    <li>
+                        <a href="#sukarno">KOLEKSI SEBELUMNYA</a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)" class="button-link left"><span class="arrow left w32"></span></a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)" class="button-link right"><span class="arrow right w32"></span></a>
+                    </li>
+                    <li>
+                        <a href="#tentang-kami">KOLEKSI BERIKUTNYA</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <div id="cover-image" class="cover" data-desktop="https://d220hvstrn183r.cloudfront.net/balai_kirti/cover.jpg" data-mobile="https://d220hvstrn183r.cloudfront.net/balai_kirti/cover-mobile.jpg">
+                <div class="cover-header only-desktop">
+                    <div class="cover-header-text-small">MUSEUM<br>KEPRESIDENAN<br>REPUBLIK INDONESIA</div>
+                    <div class="cover-header-text-large">BALAI<br>KIRTI</div>
+                </div>
+                <div class="detail-cover-container">
+                    <h1 id="headerTitle"></h1>
+                    <div class="detail-cover-text" >
+                        <span class="label">Terbitan</span>
+                        <span class="space">:</span>
+                        <span class="cover-text" id="year"></span>
+                    </div>
+                    <div class="detail-cover-text">
+                        <span class="label">Karya</span>
+                        <span class="space">:</span>
+                        <span class="cover-text" id="writer"></span>
+                    </div>
+                    <div class="detail-cover-text">
+                        <span class="label">Penerbit</span>
+                        <span class="space">:</span>
+                        <span class="cover-text" id="publisher"></span>
+                    </div>
+                </div>
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mP8/5+hHgAHggJ/PchI7wAAAABJRU5ErkJggg==" alt="cover" id="imgSrc">
+            </div>
+            <div class="bottom-bar only-mobile">
+                <a href="/#">Home</a>
+                <a href="/info" class="tooltip-info">i</a>
+                <a href="/#left" class="nav-bar-left"><span class="arrow left w32"></span></a>
+                <a href="/#right" class="nav-bar-right"><span class="arrow right w32"></span></a>
+            </div>
+            <div class="detail-container">
+                <div class="detail-layout-left">
+                    <div class="detail-header-orange">
+                        <div class="detail-content-width">
+                            <h2 class="orange">Koleksi</h2>
+                        </div>
+                    </div>
+                    <div class="detail-number" id="numberCollection">1</div>
+                    <div class="detail-content">
+                        <div class="detail-content-width">
+                            <h2 class="white">Koleksi</h2>
+                            <h3 id="contentTitle"></h3>
+                            <h4 id="contentTaicing"></h4>
+                            <div id="contentText"></div>
+                        </div>
+                    </div>
+                    <div class="detail-galery only-desktop">
+                        <div class="detail-galery-container"></div>
+                    </div>
+                </div>
+                <div class="detail-layout-right">
+                    <div class="detail-cover-right-container">
+                        <div class="detail-cover-right">
+                            <div class="slide-container-cover">
+                                <div class="slide-item">
+                                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mP8/5+hHgAHggJ/PchI7wAAAABJRU5ErkJggg==" alt="thumbnail image" id="imgThumbnail">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="detail-cover-right-text">
+                            <p><b>Lorem ipsum dolor sit amet</b>, consectetur adipiscing elit. Vivamus imperdiet sed dolor at facilisis. Nulla metus arcu, mollis eu felis quis, finibus molestie leo. Sed eu blandit elit. Donec ut ex eu ante feugiat suscipit et eget odio. Nulla facilisis mauris odio, euismod semper nisl ullamcorper vel.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="app-detail.js"></script>
+</body>
+</html>

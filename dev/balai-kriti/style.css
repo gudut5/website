@@ -1,5 +1,7 @@
 *{
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 body{
     margin: 0;
@@ -86,14 +88,39 @@ a.logo{
 }
 .cover{
     background-color: #BBA16D;
-    height: 440px;
     overflow: hidden;
     object-fit: contain;
     object-position: center;
+    position: relative;
 }
 .cover img{
     min-width: 100%;
     min-height: 100%;
+}
+.cover-header{
+    position: absolute;
+    background-color: #ffffff;
+    color: #0E869B;
+    width: 300px;
+    height: 300px;
+    padding-top: 80px;
+    padding-left: 70px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    border-radius: 150px;
+    left: -55px;
+    top: -60px;
+}
+.cover-header .cover-header-text-large{
+    font-size: 3.8em;
+    font-weight: 600;
+    line-height: 1em;
+}
+.cover-header .cover-header-text-small{
+    font-size: 1.1em;
+    font-weight: 400;
+    line-height: 1em;
+    padding-left: 3px;
 }
 .slide-nav{
     color: #0E869B;
@@ -192,6 +219,9 @@ a.icon-socmed.youtube svg{
 }
 .list-collection .list-detail{
     position: relative;
+    justify-content: center;
+    flex-direction: column;
+    display: flex;
 }
 .list-collection .list-detail a.button-link{
     position: absolute;
@@ -218,6 +248,7 @@ a.icon-socmed.youtube svg{
 }
 .list-collection .list-detail h2{
     color: #F17800;
+    margin-bottom: 20px;
 }
 .list-collection .list-detail p{
     font-size: 1.1em;
@@ -233,10 +264,10 @@ span.arrow:hover{
     opacity: .9;
 }
 span.arrow.left{
-    background-image: url(https://historiadotid.s3.ap-southeast-1.amazonaws.com/balai_kriti/left-64.png);
+    background-image: url(https://historiadotid.s3.ap-southeast-1.amazonaws.com/balai_kirti/left-64.png);
 }
 span.arrow.right{
-    background-image: url(https://historiadotid.s3.ap-southeast-1.amazonaws.com/balai_kriti/right-64.png);
+    background-image: url(https://historiadotid.s3.ap-southeast-1.amazonaws.com/balai_kirti/right-64.png);
 }
 span.arrow.w64{
     width: 64px;
@@ -319,6 +350,9 @@ span.arrow.w48{
     main{
         padding-top: 0;
     }
+    .cover{
+        height: 100vw;
+    }
 }
 @media(min-width: 480px){
     header{
@@ -338,6 +372,9 @@ span.arrow.w48{
     }
     main{
         padding-top: 47px;
+    }
+    .cover{
+        height: 440px;
     }
 }
 @media(max-width: 767px){
