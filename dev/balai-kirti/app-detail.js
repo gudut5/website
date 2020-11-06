@@ -15,7 +15,7 @@ function setCoverImg(imgUrl){
 }
 function getKoleksi(koleksi){
     var request = new XMLHttpRequest();
-    request.open('GET', 'https://historiadotid.s3.ap-southeast-1.amazonaws.com/balai_kirti/data.json', true);
+    request.open('GET', 'data.json', true);
     
     request.onload = function() {
       if (request.status >= 200 && request.status < 400) {
@@ -46,9 +46,9 @@ for (let i = 0; i < nextCollection.length; i++) {
 }
 for (let i = 0; i < previousCollection.length; i++) {
     previousCollection[i].addEventListener("click", function() {
-        if(selectedCollection < 25){
+        if(selectedCollection > 1){
             document.querySelector('.overlay').style.display = "";
-            selectedCollection += 1;
+            selectedCollection -= 1;
             updatePage(selectedCollection);
         }
     });
