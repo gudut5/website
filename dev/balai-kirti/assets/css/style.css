@@ -137,7 +137,7 @@ a.logo img{
     font-weight: 900;
     line-height: 1em;
     position: relative;
-    bottom: -12px;
+    bottom: -15px;
 }
 .slide-contents{
     background-color: #0E869B;
@@ -423,7 +423,7 @@ span.arrow.w48{
         letter-spacing: 2px;
     }
     .slide-header-text{
-        font-size: 5em;
+        font-size: 5rem;
         margin: 0;
         left: -6px;
     }
