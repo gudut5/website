@@ -52,7 +52,9 @@ function drawSlider(){
         items: 1,
         loop: false,
         slideBy: 'page',
-        touch: false,
+        swipeAngle: 30,
+        touch: true,
+        preventScrollOnTouch: true,
         prevButton: '#previous',
         nextButton: '#next',
         }
