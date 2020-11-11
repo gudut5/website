@@ -37,7 +37,7 @@ function drawSlider(){
     var appendText = '';
     for(i=0;i<data.artikel.length;i++){
         appendText += '<div class="item">'
-        appendText += '<a href="/detail.html?koleksi='+data.artikel[i].id+'">'
+        appendText += '<a href="detail.html?koleksi='+data.artikel[i].id+'">'
         appendText += '<img src="'+data.artikel[i].slide_thumbnail+'" alt="thumbnail-'+data.artikel[i].id+'">'
         appendText += '</a>'
         appendText += '</div>'
