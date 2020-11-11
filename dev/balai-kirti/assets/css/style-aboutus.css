@@ -130,9 +130,13 @@ a.logo img{
     letter-spacing: 2px;
     color: #0E869B;
 }
-
+.img-container{
+    overflow: hidden;
+    position: relative;
+}
 .cover-header{
     position: absolute;
+    background-color: #ffffff;
     color: #0E869B;
     width: 300px;
     height: 300px;
@@ -143,6 +147,7 @@ a.logo img{
     border-radius: 150px;
     left: -55px;
     top: -60px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
 }
 .cover-header .cover-header-text-large{
     font-size: 3.8em;
@@ -316,6 +321,7 @@ ol li{
     }
     .img-container{
         width: 100vw;
+        min-height: 0;
     }
     .img-container img{
         width: 100%;
@@ -381,7 +387,7 @@ ol li{
         height: auto;
     }
     .cover{
-        background-color: #124D58;
+        background-color: transparent;
         overflow: hidden;
         position: static;
         width: 100%;
@@ -402,6 +408,7 @@ ol li{
     }
     .img-container{
         width: 100%;
+        min-height: 440px;
     }
     .img-container img{
         width: 100%;

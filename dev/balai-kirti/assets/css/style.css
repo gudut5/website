@@ -117,6 +117,7 @@ a.logo img{
     border-radius: 150px;
     left: -55px;
     top: -60px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
 }
 .cover-header .cover-header-text-large{
     font-size: 3.8em;

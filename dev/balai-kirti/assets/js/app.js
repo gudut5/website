@@ -3,15 +3,6 @@ var totalCollection = 25;
 var data;
 document.addEventListener('DOMContentLoaded', function() {
     getKoleksi()
-    var intViewportWidth = window.innerWidth;
-    var coverImg = document.getElementById('cover-image');
-    var desktopImg = coverImg.getAttribute('data-desktop');
-    var mobileImg = coverImg.getAttribute('data-mobile');
-    if(intViewportWidth > 768){
-        setCoverImg(desktopImg,'desktop');
-    }else{
-        setCoverImg(mobileImg,'mobile');
-    }
 })
 function setCoverImg(imgUrl,typeView){
     var coverImg = document.getElementById('cover-image');
@@ -123,6 +114,12 @@ function drawList(){
     document.getElementById("listCollection").innerHTML = appendText;
 }
 function drawPage(){
+    var intViewportWidth = window.innerWidth;
+    if(intViewportWidth > 768){
+        setCoverImg(data.cover,'desktop');
+    }else{
+        setCoverImg(data.cover_mobile,'mobile');
+    }
     document.getElementById("pageTitle").innerHTML = data.title;
     document.getElementById("pageTaicing").innerHTML = data.taicing;
     var elements = document.querySelectorAll('.cover-header-text-small, .slide-header-text-small');

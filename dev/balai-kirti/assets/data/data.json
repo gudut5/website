@@ -2,12 +2,15 @@
     "koleksi": "BALAI KIRTI",
     "koleksi_detail": "MUSEUM<\/br>KEPRESIDENAN<\/br>REPUBLIK INDONESIA",
     "logo": "",
-    "cover": "https://picsum.photos/1015/540?random=1",
-    "location": "",
-    "facebook": "",
-    "twitter": "",
-    "instagram": "",
-    "youtube": "",
+    "cover": "https://picsum.photos/1015/440?random=1",
+    "cover_mobile": "https://picsum.photos/640/640?random=1",
+    "aboutus_cover": "https://picsum.photos/1015/440?random=2",
+    "aboutus_cover_mobile": "https://picsum.photos/480/640?random=2",
+    "location": "#jakarta",
+    "facebook": "#facebook",
+    "twitter": "#twitter",
+    "instagram": "#instagram",
+    "youtube": "#youtube",
     "title": "25 Buku berpengaruh untuk Sukarno",
     "taicing": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
     "version": 1,
@@ -25,7 +28,25 @@
         "slide_thumbnail": "https://picsum.photos/400/600?random=1",
         "caption_thumbnail": "<b>Lorem ipsum dolor sit amet</b>, consectetur adipiscing elit.",
         "taicing": "lorem ipsum 1",
-        "content": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p><p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p><p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>"
+        "content": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p><p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p><p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>",
+        "galery":[
+          {
+            "url": "https://picsum.photos/400/300?random=11",
+            "caption": "caption1"
+          },
+          {
+            "url": "https://picsum.photos/400/300?random=12",
+            "caption": "caption1"
+          },
+          {
+            "url": "https://picsum.photos/400/300?random=13",
+            "caption": "caption1"
+          },
+          {
+            "url": "https://picsum.photos/400/300?random=14",
+            "caption": "caption1"
+          }
+        ]
       },
       {
         "id": 2,
@@ -38,7 +59,25 @@
         "slide_thumbnail": "https://picsum.photos/400/600?random=2",
         "caption_thumbnail": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
         "taicing": "lorem ipsum 2",
-        "content": "lorem ipsum 2"
+        "content": "lorem ipsum 2",
+        "galery":[
+          {
+            "url": "https://picsum.photos/400/300?random=21",
+            "caption": "caption1"
+          },
+          {
+            "url": "https://picsum.photos/400/300?random=22",
+            "caption": "caption1"
+          },
+          {
+            "url": "https://picsum.photos/400/300?random=23",
+            "caption": "caption1"
+          },
+          {
+            "url": "https://picsum.photos/400/300?random=24",
+            "caption": "caption1"
+          }
+        ]
       },
       {
         "id": 3,
@@ -51,7 +90,25 @@
         "slide_thumbnail": "https://picsum.photos/400/600?random=3",
         "caption_thumbnail": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
         "taicing": "lorem ipsum 3",
-        "content": "lorem ipsum 3"
+        "content": "lorem ipsum 3",
+        "galery":[
+          {
+            "url": "https://picsum.photos/400/300?random=31",
+            "caption": "caption1"
+          },
+          {
+            "url": "https://picsum.photos/400/300?random=32",
+            "caption": "caption1"
+          },
+          {
+            "url": "https://picsum.photos/400/300?random=33",
+            "caption": "caption1"
+          },
+          {
+            "url": "https://picsum.photos/400/300?random=34",
+            "caption": "caption1"
+          }
+        ]
       },
       {
         "id": 4,
@@ -64,7 +121,25 @@
         "slide_thumbnail": "https://picsum.photos/400/600?random=4",
         "caption_thumbnail": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
         "taicing": "lorem ipsum",
-        "content": "lorem ipsum"
+        "content": "lorem ipsum",
+        "galery":[
+          {
+            "url": "https://picsum.photos/400/300?random=41",
+            "caption": "caption1"
+          },
+          {
+            "url": "https://picsum.photos/400/300?random=42",
+            "caption": "caption1"
+          },
+          {
+            "url": "https://picsum.photos/400/300?random=43",
+            "caption": "caption1"
+          },
+          {
+            "url": "https://picsum.photos/400/300?random=44",
+            "caption": "caption1"
+          }
+        ]
       },
       {
         "id": 5,
@@ -77,7 +152,25 @@
         "slide_thumbnail": "https://picsum.photos/400/600?random=5",
         "caption_thumbnail": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
         "taicing": "lorem ipsum 5",
-        "content": "lorem ipsum 5"
+        "content": "lorem ipsum 5",
+        "galery":[
+          {
+            "url": "https://picsum.photos/400/300?random=51",
+            "caption": "caption1"
+          },
+          {
+            "url": "https://picsum.photos/400/300?random=52",
+            "caption": "caption1"
+          },
+          {
+            "url": "https://picsum.photos/400/300?random=53",
+            "caption": "caption1"
+          },
+          {
+            "url": "https://picsum.photos/400/300?random=54",
+            "caption": "caption1"
+          }
+        ]
       },
       {
         "id": 6,
@@ -90,7 +183,25 @@
         "slide_thumbnail": "https://picsum.photos/400/600?random=6",
         "caption_thumbnail": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
         "taicing": "lorem ipsum",
-        "content": "lorem ipsum"
+        "content": "lorem ipsum",
+        "galery":[
+          {
+            "url": "https://picsum.photos/400/300?random=61",
+            "caption": "caption1"
+          },
+          {
+            "url": "https://picsum.photos/400/300?random=62",
+            "caption": "caption1"
+          },
+          {
+            "url": "https://picsum.photos/400/300?random=63",
+            "caption": "caption1"
+          },
+          {
+            "url": "https://picsum.photos/400/300?random=64",
+            "caption": "caption1"
+          }
+        ]
       },
       {
         "id": 7,

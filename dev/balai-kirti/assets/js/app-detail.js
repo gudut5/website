@@ -79,8 +79,48 @@ function updatePage(collection){
             coverImg.addEventListener('load', function(){
                 document.querySelector('.overlay').style.display = "none";
             })
-            
-            
+            if(typeof data.artikel[i].galery !== 'undefined'){
+                var totalGalery = data.artikel[i].galery.length;
+                if(totalGalery > 1){
+                    document.getElementById('base_wrapper').innerHTML = '<div class="base" id="base"></div>';
+                    var galery = data.artikel[i].galery;
+                    var appendGallery = '';
+                    for(g=0;g<totalGalery;g++){
+                        var indexG = g+1;
+                        appendGallery += '<div class="item">';
+                        appendGallery += '<img src="'+galery[g].url+'" alt="galery '+indexG+'">';
+                        appendGallery += '</div>';
+                    }
+                    document.getElementById('base').innerHTML = appendGallery;
+                    var doc = document,
+                    speed = 400,
+                    sliders = new Object(),
+                    options = {
+                        'base': {
+                        container: '',
+                        items: 1,
+                        loop: false,
+                        slideBy: 'page',
+                        mouseDrag: true,
+                        }
+                    };
+                    var item = options['base'];
+                    item.container = '#base';
+                    item.swipeAngle = false;
+                    if (!item.speed) { item.speed = speed; }
+
+                    if (doc.querySelector(item.container)) {
+                        sliders['base'] = tns(options['base']);
+                    }
+                    document.querySelector('.detail-galery').style.visibility = "visible";
+                }else{
+                    document.querySelector('.detail-galery').style.visibility = "hidden";
+                    document.getElementById('base_wrapper').innerHTML = '';
+                }
+            }else{
+                document.querySelector('.detail-galery').style.visibility = "hidden";
+                document.getElementById('base_wrapper').innerHTML = '';
+            }
         }
     }
 }
