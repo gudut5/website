@@ -14,12 +14,23 @@ a{
     text-decoration: none;
     color: #ffffff;
 }
+a.logo img{
+    height: 100px;
+}
+.slide-left-layout{
+    position: relative;
+}
+.slide-left-layout a.logo{
+    position: absolute;
+    top: 0;
+    left: 120px;
+}
 header{
     top: 0;
     z-index: 999;
 }
 .overlay{
-    background-color: rgba(0,0,0,0.7);
+    background-color: rgba(255,255,255,0.2);
     position: fixed;
     width: 100vw;
     height: 100vh;
@@ -30,16 +41,16 @@ header{
     justify-content: center;
     align-items: center;
 }
-.bg-black{
-    background-color: #000000;
-}
-
 .welcome-text{
     background-color: #0E869B;
     line-height: 47px;
     height: 47px;
     font-weight: 500;
     position: relative;
+}
+.welcome-text .logo{
+    position: relative;
+    z-index: 999;
 }
 .ext-link-top{
     background-color: #F17800;
@@ -81,6 +92,8 @@ ul.detail-nav li.ext-link a{
 nav{
     background-color: #000000;
     height: 58px;
+    position: relative;
+    z-index: 9;
 }
 nav ul{
     margin: 0;
@@ -264,17 +277,10 @@ span.arrow.w32{
     position: relative;
     height: 300px;
 }
-.detail-cover-right{
-    overflow: hidden;
-}
-.slide-item{
-    overflow: hidden;
-    object-fit: contain;
-    object-position: center;
-}
 .slide-item img{
-    max-width: 100%;
-    min-height: 100%;
+    box-shadow: -10px 10px 50px #333333;
+    height: 100%;
+    width: 100%;
 }
 .detail-cover-right-container{
     position: relative;
@@ -282,6 +288,7 @@ span.arrow.w32{
 .detail-cover-right-text p{
     margin: 0;
     padding: 0;
+    color: #000000;
 }
 .bottom-bar{
     background-color: #124D58;
@@ -345,6 +352,9 @@ span.arrow.w32{
     letter-spacing: 2px;
     color: #0E869B;
 }
+.nav-bar-left, .nav-bar-right{
+    line-height: 0;
+}
 @media(max-width: 480px){
     header{
         position: relative;
@@ -378,7 +388,7 @@ span.arrow.w32{
     .detail-cover-right{
         background-color: #E3BE98;
         width: 100vw;
-        height: 100vw;
+        height: auto;
         position: relative;
         z-index: 3;
         left: 0;
@@ -387,11 +397,11 @@ span.arrow.w32{
     }
     .slide-container-cover{
         width: 100vw;
-        height: 100vw;
+        height: auto;
     }
     .slide-item{
         width: 100vw;
-        height: 100vw;
+        height: auto;
     }
     .detail-cover-right-text{
         position: absolute;
@@ -399,10 +409,10 @@ span.arrow.w32{
         top: auto;
         bottom: 0;
         left: 0;
-        width: 100vw;
+        width: 100%;
         font-size: .9em;
         background-color: rgba(255,255,255,0.3);
-        padding: 10px;
+        padding: 20px 10px;
     }
     .cover{
         height: 100vw;
@@ -448,13 +458,11 @@ span.arrow.w32{
         padding: 60px 0;
     }
     .detail-cover-right{
-        background-color: #E3BE98;
         width: 300px;
         height: 400px;
         position: relative;
         z-index: 3;
         left: -50px;
-        box-shadow: -10px 10px 50px #333333;
     }
     .slide-container-cover{
         width: 300px;
@@ -485,6 +493,9 @@ span.arrow.w32{
 }
 
 @media(max-width: 768px){
+    .bg-black{
+        background-color: #ffffff;
+    }
     main{
         width: 100vw;
         overflow-x: hidden;
@@ -503,8 +514,14 @@ span.arrow.w32{
     .detail-container h2{
         font-size: 4em;
     }
+    .slide-item{
+        background-color: #ffffff;
+    }
 }
 @media(min-width: 768px){
+    .bg-black{
+        background-color: #000000;
+    }
     main{
         width: 100vw;
         padding-top: 105px;
@@ -527,6 +544,9 @@ span.arrow.w32{
         width: 400px;
         margin: 0 auto;
         margin-left: 120px;
+    }
+    .slide-item{
+        background-color: transparent;
     }
 }
 @media(min-width: 480px) and (max-width: 769px){

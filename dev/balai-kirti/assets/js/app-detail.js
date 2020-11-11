@@ -1,12 +1,14 @@
 const urlParams = new URLSearchParams(window.location.search);
 var myParam = urlParams.get('koleksi');
 var selectedCollection = 1;
-if(isNaN(myParam)) selectedCollection = parseInt(myParam);
+
 var data;
 var intViewportWidth = window.innerWidth;
 var numberElement = document.querySelector('#numberCollection');
 var coverImg = document.getElementById('imgSrc');
+var totalCollection = 25;
 document.addEventListener('DOMContentLoaded', function() {
+    if(!isNaN(parseInt(myParam))) selectedCollection = parseInt(myParam);
     getKoleksi(selectedCollection)
 });
 function setCoverImg(imgUrl){
@@ -36,7 +38,7 @@ var previousCollection = document.querySelectorAll('a.button-link.left, .nav-bar
 var nextCollection = document.querySelectorAll('a.button-link.right, .nav-bar-right');
 for (let i = 0; i < nextCollection.length; i++) {
     nextCollection[i].addEventListener("click", function() {
-        if(selectedCollection < 25){
+        if(selectedCollection < totalCollection){
             document.querySelector('.overlay').style.display = "";
             selectedCollection += 1;
             updatePage(selectedCollection);
@@ -67,6 +69,8 @@ function updatePage(collection){
             document.getElementById('contentTitle').innerHTML = data.artikel[i].title;
             document.getElementById('contentTaicing').innerHTML = data.artikel[i].taicing;
             document.getElementById('contentText').innerHTML = data.artikel[i].content;
+            document.getElementById('captionThumbnail').innerHTML = data.artikel[i].caption_thumbnail;
+            
             if(intViewportWidth > 768){
                 setCoverImg(data.artikel[i].cover_desktop);
             }else{

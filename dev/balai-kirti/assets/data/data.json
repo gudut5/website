@@ -23,8 +23,9 @@
         "cover_desktop": "https://picsum.photos/1015/540?random=1",
         "cover_mobile": "https://picsum.photos/540/540?random=1",
         "slide_thumbnail": "https://picsum.photos/400/600?random=1",
+        "caption_thumbnail": "<b>Lorem ipsum dolor sit amet</b>, consectetur adipiscing elit.",
         "taicing": "lorem ipsum 1",
-        "content": "lorem ipsum 1"
+        "content": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p><p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p><p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>"
       },
       {
         "id": 2,
@@ -35,6 +36,7 @@
         "cover_desktop": "https://picsum.photos/1015/540?random=2",
         "cover_mobile": "https://picsum.photos/540/540?random=2",
         "slide_thumbnail": "https://picsum.photos/400/600?random=2",
+        "caption_thumbnail": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
         "taicing": "lorem ipsum 2",
         "content": "lorem ipsum 2"
       },
@@ -47,6 +49,7 @@
         "cover_desktop": "https://picsum.photos/1015/540?random=3",
         "cover_mobile": "https://picsum.photos/540/540?random=3",
         "slide_thumbnail": "https://picsum.photos/400/600?random=3",
+        "caption_thumbnail": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
         "taicing": "lorem ipsum 3",
         "content": "lorem ipsum 3"
       },
@@ -59,6 +62,7 @@
         "cover_desktop": "https://picsum.photos/1015/540?random=4",
         "cover_mobile": "https://picsum.photos/540/540?random=4",
         "slide_thumbnail": "https://picsum.photos/400/600?random=4",
+        "caption_thumbnail": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
         "taicing": "lorem ipsum",
         "content": "lorem ipsum"
       },
@@ -71,6 +75,7 @@
         "cover_desktop": "https://picsum.photos/1015/540?random=5",
         "cover_mobile": "https://picsum.photos/540/540?random=5",
         "slide_thumbnail": "https://picsum.photos/400/600?random=5",
+        "caption_thumbnail": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
         "taicing": "lorem ipsum 5",
         "content": "lorem ipsum 5"
       },
@@ -83,6 +88,7 @@
         "cover_desktop": "https://picsum.photos/1015/540?random=6",
         "cover_mobile": "https://picsum.photos/540/540?random=6",
         "slide_thumbnail": "https://picsum.photos/400/600?random=6",
+        "caption_thumbnail": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
         "taicing": "lorem ipsum",
         "content": "lorem ipsum"
       },
@@ -95,6 +101,7 @@
         "cover_desktop": "https://picsum.photos/1015/540?random=7",
         "cover_mobile": "https://picsum.photos/540/540?random=7",
         "slide_thumbnail": "https://picsum.photos/400/600?random=7",
+        "caption_thumbnail": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
         "taicing": "lorem ipsum7",
         "content": "lorem ipsum7"
       },
@@ -107,6 +114,7 @@
         "cover_desktop": "https://picsum.photos/1015/540?random=8",
         "cover_mobile": "https://picsum.photos/540/540?random=8",
         "slide_thumbnail": "https://picsum.photos/400/600?random=8",
+        "caption_thumbnail": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
         "taicing": "lorem ipsum8",
         "content": "lorem ipsum8"
       },
@@ -119,6 +127,7 @@
         "cover_desktop": "https://picsum.photos/1015/540?random=9",
         "cover_mobile": "https://picsum.photos/540/540?random=9",
         "slide_thumbnail": "https://picsum.photos/400/600?random=9",
+        "caption_thumbnail": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
         "taicing": "lorem ipsum9",
         "content": "lorem ipsum9"
       },
@@ -131,6 +140,7 @@
         "cover_desktop": "https://picsum.photos/1015/540?random=10",
         "cover_mobile": "https://picsum.photos/540/540?random=10",
         "slide_thumbnail": "https://picsum.photos/400/600?random=10",
+        "caption_thumbnail": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
         "taicing": "lorem ipsum10",
         "content": "lorem ipsum10"
       },
@@ -143,6 +153,7 @@
         "cover_desktop": "https://picsum.photos/1015/540?random=11",
         "cover_mobile": "https://picsum.photos/540/540?random=11",
         "slide_thumbnail": "https://picsum.photos/400/600?random=11",
+        "caption_thumbnail": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
         "taicing": "lorem ipsum11",
         "content": "lorem ipsum11"
       },
@@ -155,6 +166,7 @@
         "cover_desktop": "https://picsum.photos/1015/540?random=12",
         "cover_mobile": "https://picsum.photos/540/540?random=12",
         "slide_thumbnail": "https://picsum.photos/400/600?random=12",
+        "caption_thumbnail": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
         "taicing": "lorem ipsum12",
         "content": "lorem ipsum12"
       },
@@ -167,6 +179,7 @@
         "cover_desktop": "https://picsum.photos/1015/540?random=13",
         "cover_mobile": "https://picsum.photos/540/540?random=13",
         "slide_thumbnail": "https://picsum.photos/400/600?random=13",
+        "caption_thumbnail": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
         "taicing": "lorem ipsum13",
         "content": "lorem ipsum13"
       },
@@ -179,6 +192,7 @@
         "cover_desktop": "https://picsum.photos/1015/540?random=14",
         "cover_mobile": "https://picsum.photos/540/540?random=14",
         "slide_thumbnail": "https://picsum.photos/400/600?random=14",
+        "caption_thumbnail": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
         "taicing": "lorem ipsum14",
         "content": "lorem ipsum14"
       },
@@ -191,6 +205,7 @@
         "cover_desktop": "https://picsum.photos/1015/540?random=15",
         "cover_mobile": "https://picsum.photos/540/540?random=15",
         "slide_thumbnail": "https://picsum.photos/400/600?random=15",
+        "caption_thumbnail": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
         "taicing": "lorem ipsum15",
         "content": "lorem ipsum15"
       },
@@ -203,6 +218,7 @@
         "cover_desktop": "https://picsum.photos/1015/540?random=16",
         "cover_mobile": "https://picsum.photos/540/540?random=16",
         "slide_thumbnail": "https://picsum.photos/400/600?random=16",
+        "caption_thumbnail": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
         "taicing": "lorem ipsum16",
         "content": "lorem ipsum16"
       },
@@ -215,6 +231,7 @@
         "cover_desktop": "https://picsum.photos/1015/540?random=17",
         "cover_mobile": "https://picsum.photos/540/540?random=17",
         "slide_thumbnail": "https://picsum.photos/400/600?random=17",
+        "caption_thumbnail": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
         "taicing": "lorem ipsum17",
         "content": "lorem ipsum17"
       },
@@ -227,6 +244,7 @@
         "cover_desktop": "https://picsum.photos/1015/540?random=18",
         "cover_mobile": "https://picsum.photos/540/540?random=18",
         "slide_thumbnail": "https://picsum.photos/400/600?random=18",
+        "caption_thumbnail": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
         "taicing": "lorem ipsum",
         "content": "lorem ipsum"
       },
@@ -239,6 +257,7 @@
         "cover_desktop": "https://picsum.photos/1015/540?random=19",
         "cover_mobile": "https://picsum.photos/540/540?random=19",
         "slide_thumbnail": "https://picsum.photos/400/600?random=19",
+        "caption_thumbnail": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
         "taicing": "lorem ipsum",
         "content": "lorem ipsum"
       },
@@ -251,6 +270,7 @@
         "cover_desktop": "https://picsum.photos/1015/540?random=20",
         "cover_mobile": "https://picsum.photos/540/540?random=20",
         "slide_thumbnail": "https://picsum.photos/400/600?random=20",
+        "caption_thumbnail": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
         "taicing": "lorem ipsum",
         "content": "lorem ipsum"
       },
@@ -263,6 +283,7 @@
         "cover_desktop": "https://picsum.photos/1015/540?random=21",
         "cover_mobile": "https://picsum.photos/540/540?random=21",
         "slide_thumbnail": "https://picsum.photos/400/600?random=21",
+        "caption_thumbnail": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
         "taicing": "lorem ipsum",
         "content": "lorem ipsum"
       },
@@ -275,6 +296,7 @@
         "cover_desktop": "https://picsum.photos/1015/540?random=22",
         "cover_mobile": "https://picsum.photos/540/540?random=22",
         "slide_thumbnail": "https://picsum.photos/400/600?random=22",
+        "caption_thumbnail": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
         "taicing": "lorem ipsum",
         "content": "lorem ipsum"
       },
@@ -287,6 +309,7 @@
         "cover_desktop": "https://picsum.photos/1015/540?random=23",
         "cover_mobile": "https://picsum.photos/540/540?random=23",
         "slide_thumbnail": "https://picsum.photos/400/600?random=23",
+        "caption_thumbnail": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
         "taicing": "lorem ipsum",
         "content": "lorem ipsum"
       },
@@ -299,6 +322,7 @@
         "cover_desktop": "https://picsum.photos/1015/540?random=24",
         "cover_mobile": "https://picsum.photos/540/540?random=24",
         "slide_thumbnail": "https://picsum.photos/400/600?random=24",
+        "caption_thumbnail": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
         "taicing": "lorem ipsum",
         "content": "lorem ipsum"
       },
@@ -311,6 +335,7 @@
         "cover_desktop": "https://picsum.photos/1015/540?random=25",
         "cover_mobile": "https://picsum.photos/540/540?random=25",
         "slide_thumbnail": "https://picsum.photos/400/600?random=25",
+        "caption_thumbnail": "<b>Lorem ipsum dolor sit amet</b>, consectetur adipiscing elit.",
         "taicing": "lorem ipsum",
         "content": "lorem ipsum"
       }

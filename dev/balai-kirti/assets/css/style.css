@@ -86,6 +86,13 @@ main{
 a.logo{
     position: absolute;
 }
+a.logo img{
+    height: 100px;
+}
+.slide-left-layout a.logo{
+    top: 0;
+    left: 120px;
+}
 .cover{
     background-color: #BBA16D;
     overflow: hidden;
@@ -259,15 +266,23 @@ span.arrow{
     background-position: center;
     display: inline-block;
     opacity: 1;
+    outline: none;
+}
+a:focus, a:active{
+    outline: none;
+}
+.slide-nav-container a[aria-disabled=true] span{
+    opacity: .5;
+    cursor: default;
 }
 span.arrow:hover{
     opacity: .9;
 }
 span.arrow.left{
-    background-image: url(assets/img/left-64.png);
+    background-image: url(../../assets/img/left-64.png);
 }
 span.arrow.right{
-    background-image: url(assets/img/right-64.png);
+    background-image: url(../../assets/img/right-64.png);
 }
 span.arrow.w64{
     width: 64px;
@@ -336,6 +351,16 @@ span.arrow.w48{
     font-size: 20px;
     font-weight: 600;
 }
+#base .item,#base .item a{
+    color: #000;
+}
+.tns-nav{
+    display: none;
+}
+.tns-controls{
+    position: absolute;
+    z-index: 3;
+}
 @media(max-width: 480px){
     header{
         position: relative;
@@ -402,7 +427,7 @@ span.arrow.w48{
         left: -6px;
     }
     .slide-left-layout{
-        width: auto;
+        width: 150px;
         padding: 10px;
         position: absolute;
         top: 0;
@@ -433,7 +458,7 @@ span.arrow.w48{
         z-index: 1;
         top:0;
         right: 0;
-        background-color: #124D58;
+        background-color: #000000;
         width: 100vw;
         height: 120vw;
         display: block;
