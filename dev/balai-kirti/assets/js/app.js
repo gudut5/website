@@ -52,7 +52,7 @@ function drawSlider(){
         items: 1,
         loop: false,
         slideBy: 'page',
-        mouseDrag: true,
+        touch: false,
         prevButton: '#previous',
         nextButton: '#next',
         }
