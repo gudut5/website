@@ -370,23 +370,44 @@ span.arrow.w32{
     line-height: 0;
 }
 .tns-nav{
-    display: none;
+    position: absolute;
+    bottom: 10px;
+    z-index: 9;
+    width: 100%;
+    text-align: center;
+}
+.tns-nav button{
+    border: none;
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 5px;
+    margin: 5px;
+    line-height: 10px;
+    padding: 0;
+    box-shadow: 0 0 5px rgba(0,0,0,0.3);
+}
+.tns-nav button.tns-nav-active{
+    background-color: #2A99FB;
 }
 .tns-controls{
     position: absolute;
     z-index: 3;
-    bottom: 3px;
-    right: 20px;
+    bottom: 35px;
+    right: 0;
 }
 .tns-controls button{
     border: none;
-    background-color: #0E869B;
+    background-color: #2A99FB;
     color: #ffffff;
     margin-left: 5px;
     display: inline-block;
-    height: 40px;
-    line-height: 40px;
+    height: 30px;
+    width: 30px;
+    line-height: 20px;
+    font-size: 20px;
 }
+.tns-nav button:focus, .tns-controls button:active,
 .tns-controls button:focus, .tns-controls button:active{
     outline: none;
 }

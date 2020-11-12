@@ -81,7 +81,7 @@ function updatePage(collection){
             })
             if(typeof data.artikel[i].galery !== 'undefined'){
                 var totalGalery = data.artikel[i].galery.length;
-                if(totalGalery > 1){
+                if(totalGalery > 0){
                     document.getElementById('base_wrapper').innerHTML = '<div class="base" id="base"></div>';
                     var galery = data.artikel[i].galery;
                     var appendGallery = '';
@@ -102,6 +102,7 @@ function updatePage(collection){
                         loop: false,
                         slideBy: 'page',
                         mouseDrag: true,
+                        controlsText: ["&lsaquo;","&rsaquo;"]
                         }
                     };
                     var item = options['base'];
