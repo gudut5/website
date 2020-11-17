@@ -7,7 +7,7 @@ body{
     margin: 0;
     padding: 0;
     background-color: #ffffff;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     font-size: 1rem;
     font-weight: 400;
     color: #ffffff;
@@ -35,6 +35,7 @@ header{
 nav{
     background-color: #000000;
     height: 58px;
+    font-family: 'Raleway', sans-serif;
 }
 nav ul{
     margin: 0;
@@ -54,6 +55,7 @@ nav li a{
     margin-bottom: 1px;
     font-weight: 500;
     border-bottom: 2px solid transparent;
+    font-size: .9em;
 }
 nav li a:hover,
 nav li a.selected{
@@ -82,6 +84,7 @@ main{
 .welcome-text span{
     margin-left: 100px;
     font-size: 1.1rem;
+    font-family: 'Raleway', sans-serif;
 }
 a.logo{
     position: absolute;
@@ -118,17 +121,20 @@ a.logo img{
     left: -55px;
     top: -60px;
     box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    font-family: 'Cairo', sans-serif;
 }
 .cover-header .cover-header-text-large{
     font-size: 3.8em;
-    font-weight: 600;
+    font-weight: 200;
     line-height: 1em;
+    font-family: 'Cairo', sans-serif;
 }
 .cover-header .cover-header-text-small{
-    font-size: 1.1em;
+    font-size: .9em;
     font-weight: 400;
-    line-height: 1em;
+    line-height: 1.2em;
     padding-left: 3px;
+    font-family: 'Cairo', sans-serif;
 }
 .slide-nav{
     color: #0E869B;
@@ -166,6 +172,10 @@ a.logo img{
     width: 100%;
     height: 100%;
 }
+
+.slide-contents-text p{
+    font-family: 'Raleway', sans-serif;
+}
 .slide-item img{
     min-width: 100%;
     min-height: 100%;
@@ -174,6 +184,8 @@ a.logo img{
     display: flex;
     height: 60px;
     line-height: 60px;
+    font-family: 'Raleway', sans-serif;
+    font-size: .9em;
 }
 .info-map img{
     width: 34px;
@@ -257,9 +269,11 @@ a.icon-socmed.youtube svg{
 .list-collection .list-detail h2{
     color: #F17800;
     margin-bottom: 20px;
+    font-family: 'Raleway', sans-serif;
 }
 .list-collection .list-detail p{
     font-size: 1.1em;
+    font-family: 'Raleway', sans-serif;
 }
 span.arrow{
     background-repeat: no-repeat;

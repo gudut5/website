@@ -85,10 +85,12 @@ function updatePage(collection){
                     document.getElementById('base_wrapper').innerHTML = '<div class="base" id="base"></div>';
                     var galery = data.artikel[i].galery;
                     var appendGallery = '';
+                    var galCaption = '';
                     for(g=0;g<totalGalery;g++){
                         var indexG = g+1;
                         appendGallery += '<div class="item">';
-                        appendGallery += '<img src="'+galery[g].url+'" alt="galery '+indexG+'">';
+                        appendGallery += '<img src="'+galery[g].url+'" alt="galery '+indexG+'" onclick="zoomImg(\''+galery[g].url+'\')">';
+                        appendGallery += '<span>'+galery[g].caption+'</span>';
                         appendGallery += '</div>';
                     }
                     document.getElementById('base').innerHTML = appendGallery;
@@ -124,4 +126,13 @@ function updatePage(collection){
             }
         }
     }
+}
+function zoomImg(url){
+    document.getElementById('imgZoom').setAttribute('src', url);
+    document.querySelector('.overlay-zoom').classList.remove('hide');
+    document.querySelector('body').classList.add('fixedWH');
+}
+function hideZoom(){
+    document.querySelector('body').classList.remove('fixedWH');
+    document.querySelector('.overlay-zoom').classList.add('hide');
 }

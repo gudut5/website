@@ -105,7 +105,7 @@ function drawList(){
         var setList = 'even'
         if (i%2 == 0) setList = 'odd'
         appendText += '<div class="list-collection '+setList+' dflex">';
-        appendText += '<div class="list-cover"><a href="detail.html?koleksi='+data.artikel[i].id+'"><img src="'+data.artikel[i].slide_thumbnail+'" alt="cover"></a></div>';
+        appendText += '<div class="list-cover"><a href="detail.html?koleksi='+data.artikel[i].id+'"><img src="'+data.artikel[i].foto_writer+'" alt="foto writer"></a></div>';
         appendText += '<div class="list-detail">';
         appendText += '    <a href="detail.html?koleksi='+data.artikel[i].id+'" class="button-link"><span class="arrow right w48"></span></a>';
         appendText += '    <a href="detail.html?koleksi='+data.artikel[i].id+'"><h2>'+data.artikel[i].title+'</h2></a>';

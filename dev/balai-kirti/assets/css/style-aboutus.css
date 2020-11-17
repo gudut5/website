@@ -7,7 +7,7 @@ body{
     margin: 0;
     padding: 0;
     background-color: #ffffff;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     font-size: 1rem;
     font-weight: 400;
     color: #124D58;
@@ -19,6 +19,8 @@ a{
 header{
     top: 0;
     z-index: 999;
+    font-family: 'Raleway', sans-serif;
+    font-size: .9em;
 }
 .ext-link-top{
     background-color: #F17800;
@@ -148,16 +150,17 @@ a.logo img{
     left: -55px;
     top: -60px;
     box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    font-family: 'Cairo', sans-serif;
 }
 .cover-header .cover-header-text-large{
     font-size: 3.8em;
-    font-weight: 600;
+    font-weight: 200;
     line-height: 1em;
 }
 .cover-header .cover-header-text-small{
-    font-size: 1.1em;
+    font-size: .9em;
     font-weight: 400;
-    line-height: 1em;
+    line-height: 1.2em;
     padding-left: 3px;
 }
 .aboutus-container{
@@ -172,6 +175,9 @@ ol{
 ol li{
     margin-bottom: 10px;
 }
+.aboutus-info{
+    font-family: 'Raleway', sans-serif;
+}
 .aboutus-info-detail h3{
     color:  #F17800;
     margin-bottom: 10px;
@@ -185,6 +191,10 @@ ol li{
 .aboutus-info-content h2{
     margin: 20px 0;
     margin-bottom: 40px;
+}
+.aboutus-info-content h2.bottom{
+    margin-top: 40px;
+    margin-bottom: 10px;
 }
 .aboutus-info-icon{
     position: relative;
@@ -370,7 +380,7 @@ ol li{
         padding-left: 0;
     }
     .aboutus-info-content h2{
-        font-size: 2em;
+        font-size: 1.5em;
     }
     .icon-container{
         position: absolute;
