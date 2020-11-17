@@ -273,6 +273,8 @@ span.arrow.w32{
     background-color: #ffffff;
     color: #515349;
     position: relative;
+    overflow: hidden;
+    width: 100vw;
 }
 .detail-container h2{
     margin: 0;
@@ -487,8 +489,8 @@ span.arrow.w32{
     margin-top: -5px;
     padding: 10px;
     width: 100%;
-    background-color: rgba(0,0,0,0.3);
-    color: #000000;
+    background-color: rgba(0,0,0,0.9);
+    color: #ffffff;
     font-family: 'Raleway', sans-serif;
     font-size: .9em;
     display: block;
@@ -635,11 +637,12 @@ span.arrow.w32{
         background-color: #ffffff;
     }
     main{
-        width: 100vw;
+        width: auto;
         overflow-x: hidden;
     }
     .detail-container{
         display: block;
+        margin-bottom: -90px;
     }
     .detail-content,
     .detail-header-orange{
@@ -675,11 +678,12 @@ span.arrow.w32{
         background-color: #000000;
     }
     main{
-        width: 100vw;
+        width: auto;
         padding-top: 105px;
     }
     .detail-container{
         display: flex;
+        margin-bottom: 0;
     }
     .detail-content,
     .detail-header-orange{
@@ -765,8 +769,7 @@ span.arrow.w32{
         padding-bottom: 1px;
     }
     main{
-        margin: 20px 0;
-        margin-top: 0;
+        margin: 0;
     }
     .welcome-text{
         padding: 0 20px;
