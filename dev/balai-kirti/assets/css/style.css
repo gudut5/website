@@ -723,6 +723,7 @@ span.arrow.w48{
     }
     .slide-contents{
         display: flex;
+        min-height: 600px;
     }
     .slide-container{
         position: relative;
@@ -735,7 +736,7 @@ span.arrow.w48{
         right: -58px;
         background-color: #124D58;
         width: 350px;
-        height: 400px;
+        height: 500px;
         display: block;
     }
     .slide-contents-header{

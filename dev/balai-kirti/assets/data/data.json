@@ -7,9 +7,9 @@
     "aboutus_cover": "https://picsum.photos/1015/440?random=2",
     "aboutus_cover_mobile": "https://picsum.photos/480/640?random=2",
     "location": "#jakarta",
-    "facebook": "#facebook",
-    "twitter": "#twitter",
-    "instagram": "#instagram",
+    "facebook": "https://www.facebook.com/balaikirti",
+    "twitter": "https://twitter.com/MuspresRI",
+    "instagram": "https://www.instagram.com/balaikirti/",
     "youtube": "#youtube",
     "title": "25 Buku berpengaruh untuk Sukarno",
     "taicing": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
@@ -21,30 +21,30 @@
         "id": 1,
         "date_published": "1910",
         "writer": "Johan",
-        "foto_writer": "https://picsum.photos/300/300?random=1",
+        "foto_writer": "assets/img/cover/Karl-Kautsky.jpg",
         "publisher": "Jonkopings Tandsticksfabriks",
         "title": "Lorem Ipsum Dolor sit Amet",
-        "cover_desktop": "https://picsum.photos/1015/540?random=1",
-        "cover_mobile": "https://picsum.photos/540/540?random=1",
-        "slide_thumbnail": "https://picsum.photos/400/600?random=1",
+        "cover_desktop": "assets/img/cover/COVER-WEB01.jpg",
+        "cover_mobile": "assets/img/cover/COVER-MOBILE01.jpg",
+        "slide_thumbnail": "assets/img/cover/Karl-Kautsky-book.jpg",
         "caption_thumbnail": "<b>Lorem ipsum dolor sit amet</b>, consectetur adipiscing elit.",
         "taicing": "Nulla facilisis mauris odio, euismod semper nisl ullamcorper vel.",
         "content": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p><p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p><p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>",
         "galery":[
           {
-            "url": "https://picsum.photos/400/300?random=11",
+            "url": "assets/img/cover/Galeri01-01.jpg",
             "caption": "<b>Lorem Ipsum</b> is simply dummy text of the printing and typesetting industry."
           },
           {
-            "url": "https://picsum.photos/400/300?random=12",
+            "url": "assets/img/cover/Galeri01-02.jpg",
             "caption": "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
           },
           {
-            "url": "https://picsum.photos/400/300?random=13",
+            "url": "assets/img/cover/Galeri01-03.jpg",
             "caption": "It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged."
           },
           {
-            "url": "https://picsum.photos/400/300?random=14",
+            "url": "assets/img/cover/Galeri01-04.jpg",
             "caption": "It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
           }
         ]
