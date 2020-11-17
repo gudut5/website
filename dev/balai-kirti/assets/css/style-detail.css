@@ -274,7 +274,6 @@ span.arrow.w32{
     color: #515349;
     position: relative;
     overflow: hidden;
-    width: 100vw;
 }
 .detail-container h2{
     margin: 0;
@@ -643,6 +642,7 @@ span.arrow.w32{
     .detail-container{
         display: block;
         margin-bottom: -90px;
+        width: 100vw;
     }
     .detail-content,
     .detail-header-orange{
@@ -684,6 +684,7 @@ span.arrow.w32{
     .detail-container{
         display: flex;
         margin-bottom: 0;
+        width: auto;
     }
     .detail-content,
     .detail-header-orange{
