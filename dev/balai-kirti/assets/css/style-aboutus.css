@@ -29,10 +29,12 @@ header{
     text-align: right;
     display: inline-block;
     padding: 0 10px;
-    padding-left: 30px;
+    padding-left: 20px;
     line-height: 47px;
     border-top-left-radius: 25px;
     border-bottom-left-radius: 25px;
+    font-family: 'Raleway', sans-serif;
+    font-size: .95em;
 }
 nav{
     background-color: #000000;
@@ -96,7 +98,7 @@ a.logo img{
 .slide-left-layout a.logo{
     position: absolute;
     top: 0;
-    left: 100px;
+    left: 110px;
 }
 .slide-left-layout{
     width: auto;
@@ -210,7 +212,7 @@ ol li{
 }
 .home-icon{
     position: absolute;
-    right: 160px;
+    right: 135px;
     top: 5px;
 }
 .home-icon img{

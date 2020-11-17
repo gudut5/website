@@ -27,10 +27,12 @@ header{
     text-align: right;
     display: inline-block;
     padding: 0 10px;
-    padding-left: 30px;
+    padding-left: 20px;
     line-height: 47px;
     border-top-left-radius: 25px;
     border-bottom-left-radius: 25px;
+    font-family: 'Raleway', sans-serif;
+    font-size: .85em;
 }
 nav{
     background-color: #000000;
@@ -94,7 +96,7 @@ a.logo img{
 }
 .slide-left-layout a.logo{
     top: 0;
-    left: 120px;
+    left: 110px;
 }
 .cover{
     background-color: #BBA16D;
@@ -456,7 +458,7 @@ span.arrow.w48{
         position: absolute;
         z-index: -1;
         top: -90px;
-        left: -60px;
+        left: -80px;
     }
     .slide-contents{
         display: block;

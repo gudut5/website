@@ -28,7 +28,7 @@ a.logo img{
 .slide-left-layout a.logo{
     position: absolute;
     top: 0;
-    left: 120px;
+    left: 110px;
 }
 header{
     top: 0;
@@ -107,10 +107,12 @@ header{
     text-align: right;
     display: inline-block;
     padding: 0 10px;
-    padding-left: 30px;
+    padding-left: 20px;
     line-height: 47px;
     border-top-left-radius: 25px;
     border-bottom-left-radius: 25px;
+    font-family: 'Raleway', sans-serif;
+    font-size: .85em;
 }
 .header-container{
     display: flex;
@@ -392,6 +394,7 @@ span.arrow.w32{
     top: 0;
     left: 0;
     z-index: 9999;
+    font-family: Arial, Helvetica, sans-serif;
 }
 .slide-left-layout::after{
     content: "";
@@ -403,7 +406,7 @@ span.arrow.w32{
     position: absolute;
     z-index: -1;
     top: -90px;
-    left: -60px;
+    left: -80px;
     box-shadow: 0 0 10px rgba(0,0,0,0.3);
 }
 .slide-header-text-small{
