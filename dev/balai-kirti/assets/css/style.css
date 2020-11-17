@@ -392,6 +392,9 @@ span.arrow.w48{
     .cover{
         height: 100vw;
     }
+    .cover img{
+        width: 100vw;
+    }
 }
 @media(min-width: 480px){
     header{
@@ -414,6 +417,9 @@ span.arrow.w48{
     }
     .cover{
         height: 440px;
+    }
+    .cover img{
+        width: auto;
     }
 }
 @media(max-width: 767px){
