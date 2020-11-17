@@ -131,6 +131,7 @@ ul.detail-nav li a{
     padding: 0 10px;
     margin-left: 5px;
     font-weight: 500;
+    background-color: #0A7689;
 }
 ul.detail-nav li.ext-link a{
     background-color: #F17800;
@@ -226,20 +227,17 @@ span.arrow.w32{
     left: -55px;
     top: -60px;
     box-shadow: 0 0 10px rgba(0,0,0,0.3);
-    font-family: 'Cairo', sans-serif;
 }
 .cover-header .cover-header-text-large{
     font-size: 3.8em;
     font-weight: 200;
     line-height: 1em;
-    font-family: 'Cairo', sans-serif;
 }
 .cover-header .cover-header-text-small{
     font-size: .9em;
     font-weight: 400;
     line-height: 1.2em;
     padding-left: 3px;
-    font-family: 'Cairo', sans-serif;
 }
 .detail-cover-container{
     position: absolute;
@@ -252,6 +250,7 @@ span.arrow.w32{
     padding: 0;
     text-shadow: 0px 0px 20px #000000;
     font-family: 'Raleway', sans-serif;
+    text-transform: uppercase;
 }
 .detail-cover-text {
     font-size: 1.2em;
@@ -279,6 +278,7 @@ span.arrow.w32{
     margin: 0;
     font-weight: 800;
     margin-top: 10px;
+    letter-spacing: -3px;
 }
 .detail-container h2.white{
     color: #ffffff;
@@ -287,6 +287,7 @@ span.arrow.w32{
     left: -5px;
     line-height: 1em;
     margin-bottom: 10px;
+    font-family: Arial, Helvetica, sans-serif;
 }
 .detail-container h2.orange{
     color: #F17800;
@@ -295,13 +296,17 @@ span.arrow.w32{
     left: -5px;
     line-height: 1em;
     margin-bottom: 10px;
+    font-family: Arial, Helvetica, sans-serif;
 }
 .detail-container h3{
     margin: 0;
+    font-size: 2em;
+
 }
 .detail-container h4{
     margin: 10px 0;
     font-family: 'Raleway', sans-serif;
+    font-weight: 500;
 }
 .detail-number{
     position: absolute;
@@ -324,6 +329,7 @@ span.arrow.w32{
     overflow: hidden;
     position: relative;
     z-index: 1;
+    font-family: 'Raleway', sans-serif;
 }
 .detail-header-orange{
     width: 650px;
@@ -636,7 +642,8 @@ span.arrow.w32{
         top: 200px;
         left: -50px;
         width: 300px;
-        font-size: .9em;
+        font-size: .85em;
+        line-height: 1.5em;
         bottom: auto;
     }
     .cover{
@@ -699,6 +706,12 @@ span.arrow.w32{
         top: 20px;
         bottom: auto;
     }
+    .detail-container h3{
+        width: auto;
+    }
+    .detail-container h4{
+        width: auto;
+    }
 }
 @media(min-width: 768px){
     .bg-black{
@@ -751,11 +764,17 @@ span.arrow.w32{
     }
     .bodyText{
         font-size: .9em;
-        line-height: 1.2em;
+        line-height: 1.4em;
     }
     .tns-controls{
         top: auto;
         bottom: 30px;
+    }
+    .detail-container h3{
+        width: 300px;
+    }
+    .detail-container h4{
+        width: 300px;
     }
 }
 @media(min-width: 480px) and (max-width: 769px){

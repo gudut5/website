@@ -121,20 +121,17 @@ a.logo img{
     left: -55px;
     top: -60px;
     box-shadow: 0 0 10px rgba(0,0,0,0.3);
-    font-family: 'Cairo', sans-serif;
 }
 .cover-header .cover-header-text-large{
     font-size: 3.8em;
     font-weight: 200;
     line-height: 1em;
-    font-family: 'Cairo', sans-serif;
 }
 .cover-header .cover-header-text-small{
     font-size: .9em;
     font-weight: 400;
     line-height: 1.2em;
     padding-left: 3px;
-    font-family: 'Cairo', sans-serif;
 }
 .slide-nav{
     color: #0E869B;

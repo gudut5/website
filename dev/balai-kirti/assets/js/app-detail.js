@@ -79,7 +79,7 @@ function updatePage(collection){
             document.getElementById('writer').innerHTML = data.artikel[i].writer;
             document.getElementById('publisher').innerHTML = data.artikel[i].publisher;
             document.getElementById('imgThumbnail').setAttribute('src', data.artikel[i].slide_thumbnail);
-            document.getElementById('contentTitle').innerHTML = data.artikel[i].title;
+            document.getElementById('contentTitle').innerHTML = 'Buku '+data.artikel[i].title;
             document.getElementById('contentTaicing').innerHTML = data.artikel[i].taicing;
             document.getElementById('contentText').innerHTML = data.artikel[i].content;
             document.getElementById('captionThumbnail').innerHTML = data.artikel[i].caption_thumbnail;
