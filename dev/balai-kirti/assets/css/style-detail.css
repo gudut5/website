@@ -540,6 +540,10 @@ span.arrow.w32{
     .only-mobile{
         display: inline-block;
     }
+    #barPosition.only-mobile{
+        height: 60px;
+        display: block;
+    }
     .bottom-bar.only-mobile{
         display: flex;
     }
@@ -613,6 +617,10 @@ span.arrow.w32{
         display: block;
     }
     .only-mobile{
+        display: none;
+    }
+    #barPosition.only-mobile{
+        height: 60px;
         display: none;
     }
     main{
