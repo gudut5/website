@@ -61,8 +61,8 @@ header{
     align-items: center;
 }
 .overlay-zoom img{
+    height: 100vh;
     width: 100%;
-    height: 100%;
     object-fit: contain;
     overflow: hidden;
 }
@@ -485,6 +485,7 @@ span.arrow.w32{
     box-sizing: content-box;
     padding-right: 17px;
 }
+.overlay-zoom .item,
 #base_wrapper .item{
     position: relative;
 }
@@ -493,6 +494,7 @@ span.arrow.w32{
     margin: 0;
     padding: 0;
 }
+.overlay-zoom .item span,
 #base_wrapper .item span{
     margin-top: -5px;
     padding: 10px;
@@ -507,6 +509,9 @@ span.arrow.w32{
     left: 0;
     text-shadow: 0 0 black;
 }
+.overlay-zoom .item span{
+    width: 100vw;
+}
 .fixedBar{
     position: fixed;
     width: 100vw;
@@ -518,6 +523,12 @@ span.arrow.w32{
     height: 33px;
     position: relative;
     top: 11px;
+}
+.overlay-zoom .tns-controls{
+    bottom: 100px; 
+}
+.overlay-zoom .tns-controls button:nth-child(1){
+    margin-right: 40px;
 }
 @media(max-width: 480px){
     header{
@@ -705,6 +716,9 @@ span.arrow.w32{
     .tns-controls{
         top: 20px;
         bottom: auto;
+    }
+    .overlay-zoom .tns-controls{
+        top: 80px;
     }
     .detail-container h3{
         width: auto;

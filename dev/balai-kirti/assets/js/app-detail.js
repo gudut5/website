@@ -7,6 +7,7 @@ var intViewportWidth = window.innerWidth;
 var numberElement = document.querySelector('#numberCollection');
 var coverImg = document.getElementById('imgSrc');
 var totalCollection = 25;
+var slidersZoom = new Object()
 document.addEventListener('DOMContentLoaded', function() {
     if(!isNaN(parseInt(myParam))) selectedCollection = parseInt(myParam);
     getKoleksi(selectedCollection)
@@ -18,7 +19,6 @@ document.addEventListener("scroll", (e) => {
   var scrolled = document.scrollingElement.scrollTop;
   var position = content.offsetTop;
   if(scrolled > position){
-    console.log(scrolled,position)
     barNav.classList.add('fixedBar');
   }else{
     barNav.classList.remove('fixedBar');
@@ -153,11 +153,53 @@ function updatePage(collection){
     }
 }
 function zoomImg(url){
-    document.getElementById('imgZoom').setAttribute('src', url);
+    //document.getElementById('imgZoom').setAttribute('src', url);
     document.querySelector('.overlay-zoom').classList.remove('hide');
     document.querySelector('body').classList.add('fixedWH');
+    for(i=0;i<data.artikel.length;i++){
+        if(data.artikel[i].id == selectedCollection){
+            if(typeof data.artikel[i].galery !== 'undefined'){
+                var totalGalery = data.artikel[i].galery.length;
+                if(totalGalery > 0){
+                    var galery = data.artikel[i].galery;
+                    var appendGallery = '';
+                    var galCaption = '';
+                    for(g=0;g<totalGalery;g++){
+                        var indexG = g+1;
+                        appendGallery += '<div class="item">';
+                        appendGallery += '<img src="'+galery[g].url+'" alt="galery '+indexG+'">';
+                        appendGallery += '<span>'+galery[g].caption+'</span>';
+                        appendGallery += '</div>';
+                        if(g==0) galCaption = galery[g].caption;
+                    }
+                    document.getElementById('galZoom').innerHTML = appendGallery;
+                    var doc = document,
+                    speed = 400,
+                    options = {
+                        'base': {
+                        container: '',
+                        items: 1,
+                        loop: false,
+                        slideBy: 'page',
+                        controlsText: ["&lsaquo;","&rsaquo;"]
+                        }
+                    };
+                    var item = options['base'];
+                    item.container = '#galZoom';
+                    item.swipeAngle = false;
+                    if (!item.speed) { item.speed = speed; }
+
+                    if (doc.querySelector(item.container)) {
+                        slidersZoom['base'] = tns(options['base']);
+                    }
+                }
+            }
+        }
+    }
+    
 }
 function hideZoom(){
     document.querySelector('body').classList.remove('fixedWH');
     document.querySelector('.overlay-zoom').classList.add('hide');
+    slidersZoom['base'].destroy();
 }
