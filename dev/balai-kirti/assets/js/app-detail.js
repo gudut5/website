@@ -11,6 +11,19 @@ document.addEventListener('DOMContentLoaded', function() {
     if(!isNaN(parseInt(myParam))) selectedCollection = parseInt(myParam);
     getKoleksi(selectedCollection)
 });
+const content = document.getElementById("barPosition");
+const barNav = document.getElementById("barNav");
+document.addEventListener("scroll", (e) => {
+
+  var scrolled = document.scrollingElement.scrollTop;
+  var position = content.offsetTop;
+  if(scrolled > position){
+    console.log(scrolled,position)
+    barNav.classList.add('fixedBar');
+  }else{
+    barNav.classList.remove('fixedBar');
+  }
+});
 function setCoverImg(imgUrl){
     coverImg.setAttribute('src', imgUrl);
 }
@@ -90,10 +103,12 @@ function updatePage(collection){
                         var indexG = g+1;
                         appendGallery += '<div class="item">';
                         appendGallery += '<img src="'+galery[g].url+'" alt="galery '+indexG+'" onclick="zoomImg(\''+galery[g].url+'\')">';
-                        appendGallery += '<span>'+galery[g].caption+'</span>';
+                        appendGallery += '<span class="only-mobile">'+galery[g].caption+'</span>';
                         appendGallery += '</div>';
+                        if(g==0) galCaption = galery[g].caption;
                     }
                     document.getElementById('base').innerHTML = appendGallery;
+                    document.getElementById('captionThumbnail').innerHTML = galCaption;
                     var doc = document,
                     speed = 400,
                     sliders = new Object(),
@@ -113,6 +128,17 @@ function updatePage(collection){
 
                     if (doc.querySelector(item.container)) {
                         sliders['base'] = tns(options['base']);
+                    }
+                    const buttonNav = document.querySelectorAll(".tns-controls button");
+
+                    for (let b = 0; b < buttonNav.length; b++) {
+                        buttonNav[b].addEventListener("click", function() {
+                            setTimeout(function(){ 
+                                document.getElementById('captionThumbnail').innerHTML = document.querySelector('.tns-slide-active span').innerHTML;
+                            }, 500);
+                            
+                            
+                        });
                     }
                     document.querySelector('.detail-galery').style.visibility = "visible";
                 }else{

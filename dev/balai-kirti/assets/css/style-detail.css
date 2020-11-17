@@ -307,10 +307,10 @@ span.arrow.w32{
     position: absolute;
     z-index: 3;
     font-size: 15em;
-    font-weight: 800;
+    font-weight: 600;
     opacity: .9;
     color: #0DA1BA50;
-    top: -60px;
+    top: -30px;
     margin: 0;
     padding: 0;
     letter-spacing: -20px;
@@ -358,6 +358,7 @@ span.arrow.w32{
     align-items: center;
     position: relative;
     z-index: 9;
+    width: 100vw;
 }
 .bottom-bar a{
     display: block;
@@ -422,6 +423,7 @@ span.arrow.w32{
     z-index: 9;
     width: 100%;
     text-align: center;
+    display: none;
 }
 .tns-nav button{
     border: none;
@@ -440,8 +442,8 @@ span.arrow.w32{
 .tns-controls{
     position: absolute;
     z-index: 3;
-    top: 250px;
     right: 0;
+    z-index: 9;
 }
 .tns-controls button{
     border: none;
@@ -469,8 +471,6 @@ span.arrow.w32{
     width: 100%;
     overflow: hidden;
     font-family: 'Raleway', sans-serif;
-    font-size: .9em;
-    line-height: 1.2em;
 }
 #contentText{
     width: 100%;
@@ -478,6 +478,9 @@ span.arrow.w32{
     overflow-y: scroll;
     box-sizing: content-box;
     padding-right: 17px;
+}
+#base_wrapper .item{
+    position: relative;
 }
 #base_wrapper .item img{
     width: 100%;
@@ -488,11 +491,27 @@ span.arrow.w32{
     margin-top: -5px;
     padding: 10px;
     width: 100%;
-    background-color: rgba(0,0,0,0.9);
-    color: #ffffff;
+    background-color: rgba(255,255,255,0.3);
+    color: #000000;
     font-family: 'Raleway', sans-serif;
     font-size: .9em;
     display: block;
+    position: absolute;
+    bottom: 4px;
+    left: 0;
+    text-shadow: 0 0 black;
+}
+.fixedBar{
+    position: fixed;
+    width: 100vw;
+    top: 0;
+    left: 0;
+    z-index: 999;
+}
+.home-icon img{
+    height: 33px;
+    position: relative;
+    top: 11px;
 }
 @media(max-width: 480px){
     header{
@@ -514,7 +533,7 @@ span.arrow.w32{
         display: none;
     }
     .detail-cover-container{
-        padding: 20px;
+        padding: 20px 40px;
         max-width: 100%;
     }
     .detail-cover-container h1{
@@ -614,7 +633,7 @@ span.arrow.w32{
     .detail-cover-right-text{
         position: relative;
         z-index: 3;
-        top: 100px;
+        top: 200px;
         left: -50px;
         width: 300px;
         font-size: .9em;
@@ -672,6 +691,14 @@ span.arrow.w32{
     #base_wrapper .item span.only-mobile{
         display: block;
     }
+    .bodyText{
+        font-size: 1em;
+        line-height: 1.4em;
+    }
+    .tns-controls{
+        top: 20px;
+        bottom: auto;
+    }
 }
 @media(min-width: 768px){
     .bg-black{
@@ -698,7 +725,7 @@ span.arrow.w32{
         font-size: 4.5em;
     }
     .detail-galery-container{
-        width: 400px;
+        width: 430px;
         margin: 0 auto;
         margin-left: 120px;
     }
@@ -721,6 +748,14 @@ span.arrow.w32{
     }
     #base_wrapper .item span.only-mobile{
         display: none;
+    }
+    .bodyText{
+        font-size: .9em;
+        line-height: 1.2em;
+    }
+    .tns-controls{
+        top: auto;
+        bottom: 30px;
     }
 }
 @media(min-width: 480px) and (max-width: 769px){

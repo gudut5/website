@@ -205,6 +205,14 @@ ol li{
     align-items: center;
     background-color: #F17800;
 }
+.home-icon{
+    position: absolute;
+    right: 160px;
+    top: 5px;
+}
+.home-icon img{
+    height: 35px;
+}
 @media(max-width: 480px){
     header{
         position: relative;
