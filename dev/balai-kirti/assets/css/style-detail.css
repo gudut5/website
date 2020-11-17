@@ -480,7 +480,7 @@ span.arrow.w32{
 }
 #contentText{
     width: 100%;
-    height: 360px;
+    height: 300px;
     overflow-y: scroll;
     box-sizing: content-box;
     padding-right: 17px;
@@ -748,7 +748,7 @@ span.arrow.w32{
     .detail-galery{
         position: relative;
         width: 650px;
-        top: -120px;
+        top: -110px;
         z-index: 2;
     }
     .detail-galery-container{
