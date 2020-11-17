@@ -96,7 +96,7 @@ a.logo img{
 .slide-left-layout a.logo{
     position: absolute;
     top: 0;
-    left: 120px;
+    left: 100px;
 }
 .slide-left-layout{
     width: auto;
@@ -116,7 +116,7 @@ a.logo img{
     position: absolute;
     z-index: -1;
     top: -90px;
-    left: -60px;
+    left: -80px;
 }
 .slide-header-text-small{
     font-size: .6em;
