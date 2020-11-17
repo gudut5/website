@@ -104,6 +104,7 @@ function updatePage(collection){
                         loop: false,
                         slideBy: 'page',
                         mouseDrag: true,
+                        preventScrollOnTouch: true,
                         controlsText: ["&lsaquo;","&rsaquo;"]
                         }
                     };
