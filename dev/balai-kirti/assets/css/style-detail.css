@@ -382,7 +382,7 @@ span.arrow.w32{
     font-weight: 700;
 }
 .slide-left-layout{
-    width: 140px;
+    width: 120px;
     padding: 10px;
     position: absolute;
     top: 0;
@@ -403,14 +403,14 @@ span.arrow.w32{
     box-shadow: 0 0 10px rgba(0,0,0,0.3);
 }
 .slide-header-text-small{
-    font-size: .8em;
+    font-size: .9em;
     font-weight: 400;
     line-height: 1.2em;
     padding-left: 3px;
     color: #0E869B;
 }
 .slide-header-text-large{
-    font-size: 1.8em;
+    font-size: 1.9em;
     font-weight: 500;
     line-height: 1em;
     letter-spacing: 2px;
