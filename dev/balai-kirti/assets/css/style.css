@@ -1,3 +1,7 @@
+@font-face {
+    font-family: 'Swiss';
+    src: url('../fonts/Swiss721BlackBT.ttf')  format('truetype');
+}
 *{
     box-sizing: border-box;
     margin: 0;
@@ -143,6 +147,7 @@ a.logo img{
     line-height: 1em;
     position: relative;
     bottom: -15px;
+    font-family: 'Swiss',  sans-serif;
 }
 .slide-contents{
     background-color: #0E869B;
@@ -153,6 +158,7 @@ a.logo img{
     font-weight: 800;
     margin: 0;
     margin-bottom: 30px;
+    font-family: 'Swiss',  sans-serif;
 }
 .slide-contents-header p{
     font-size: 1.8em;
