@@ -279,8 +279,7 @@ span.arrow.w32{
 .detail-container h2{
     margin: 0;
     font-weight: 800;
-    margin-top: 10px;
-    letter-spacing: -3px;
+    letter-spacing: 3px;
 }
 .detail-container h2.white{
     color: #ffffff;
@@ -755,6 +754,9 @@ span.arrow.w32{
     .detail-content{
         height: auto;
     }
+    .detail-container h2{
+        margin-top: 8px;
+    }
 }
 @media(min-width: 768px){
     .bg-black{
@@ -828,6 +830,9 @@ span.arrow.w32{
     }
     .detail-content{
         height: 650px;
+    }
+    .detail-container h2{
+        margin-top: 15px;
     }
 }
 @media(min-width: 480px) and (max-width: 769px){

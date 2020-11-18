@@ -141,7 +141,6 @@ a.logo img{
     font-weight: 900;
     line-height: 1em;
     position: relative;
-    bottom: -15px;
 }
 .slide-contents{
     background-color: #0E869B;
@@ -554,6 +553,9 @@ span.arrow.w48{
     .info-banner a svg{
         fill: #124D58;
     }
+    .slide-header-text{
+        bottom: -15px;
+    }
 }
 @media(min-width: 768px){
     .slide-header{
@@ -570,7 +572,7 @@ span.arrow.w48{
     }
     .slide-header-text-large{
         font-size: 2.5em;
-        font-weight: 600;
+        font-weight: 500;
         line-height: 1em;
     }
     .slide-left-layout{
@@ -592,6 +594,9 @@ span.arrow.w48{
         z-index: -1;
         top: -120px;
         left: -100px;
+    }
+    .slide-header-text{
+        bottom: -25px;
     }
 }
 @media(min-width: 769px){
