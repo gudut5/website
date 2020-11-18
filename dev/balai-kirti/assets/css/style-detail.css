@@ -262,9 +262,11 @@ span.arrow.w32{
 }
 .detail-cover-text .label{
     width: 80px;
+    flex-shrink: 0;
 }
 .detail-cover-text .space{
     width: 10px;
+    flex-shrink: 0;
 }
 .detail-cover-text .cover-text{
     color: #FFC000;
@@ -388,7 +390,7 @@ span.arrow.w32{
     font-weight: 700;
 }
 .slide-left-layout{
-    width: auto;
+    width: 140px;
     padding: 10px;
     position: absolute;
     top: 0;
@@ -405,12 +407,12 @@ span.arrow.w32{
     display: block;
     position: absolute;
     z-index: -1;
-    top: -90px;
+    top: -70px;
     left: -80px;
     box-shadow: 0 0 10px rgba(0,0,0,0.3);
 }
 .slide-header-text-small{
-    font-size: .6em;
+    font-size: .8em;
     font-weight: 400;
     line-height: 1.2em;
     padding-left: 3px;

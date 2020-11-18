@@ -101,7 +101,7 @@ a.logo img{
     left: 110px;
 }
 .slide-left-layout{
-    width: auto;
+    width: 150px;
     padding: 10px;
     position: absolute;
     top: 0;
@@ -117,11 +117,11 @@ a.logo img{
     display: block;
     position: absolute;
     z-index: -1;
-    top: -90px;
+    top: -70px;
     left: -80px;
 }
 .slide-header-text-small{
-    font-size: .6em;
+    font-size: .8em;
     font-weight: 400;
     line-height: 1.2em;
     padding-left: 3px;
@@ -186,7 +186,7 @@ ol li{
     font-weight: 600;
 }
 .aboutus-info-detail p{
-    font-size: 1rem;
+    font-size: 1.1rem;
     line-height: 1.4em;
 }
 .aboutus-info-content li{
@@ -276,8 +276,7 @@ ol li{
         background-color: #124D58;
         position: static;
         margin: 0;
-        padding-top: 50px;
-        padding-bottom: 60px;
+        padding: 60px 0;
 
     }
     .aboutus-info-item{
