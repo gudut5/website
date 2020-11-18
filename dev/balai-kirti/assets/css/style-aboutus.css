@@ -213,6 +213,7 @@ ol li{
 .home-icon img{
     height: 35px;
 }
+
 @media(max-width: 480px){
     header{
         position: relative;

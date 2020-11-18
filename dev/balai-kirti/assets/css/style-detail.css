@@ -521,6 +521,23 @@ span.arrow.w32{
 .overlay-zoom .tns-controls button:nth-child(1){
     margin-right: 40px;
 }
+.detail-writter{
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 40px;
+}
+.detail-writter img{
+    width: 120px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+}
+.detail-writter h4{
+    margin-top: 0;
+    padding-top: 0;
+}
+.clear-float{
+    clear: both;
+}
 @media(max-width: 480px){
     header{
         position: relative;
@@ -802,6 +819,7 @@ span.arrow.w32{
     }
     #contentText{
         height: 300px;
+        overflow-x: hidden;
         overflow-y: scroll;
         box-sizing: content-box;
         padding-bottom: 0;
