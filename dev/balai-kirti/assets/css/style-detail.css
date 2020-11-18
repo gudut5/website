@@ -279,7 +279,8 @@ span.arrow.w32{
 .detail-container h2{
     margin: 0;
     font-weight: 800;
-    letter-spacing: 3px;
+    letter-spacing: -1px;
+    font-family: 'Archivo Black', sans-serif;
 }
 .detail-container h2.white{
     color: #ffffff;
@@ -645,6 +646,7 @@ span.arrow.w32{
     .detail-cover-container h1{
         font-size: 3.5em;
         margin: 20px 0;
+        font-family: 'Archivo Black', sans-serif;
     }
     .detail-layout-right{
         padding: 60px 0;
