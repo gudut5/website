@@ -7,10 +7,10 @@ body{
     margin: 0;
     padding: 0;
     background-color: #ffffff;
-    font-family: Arial, Helvetica, sans-serif;
     font-size: 1rem;
     font-weight: 400;
     color: #124D58;
+    font-family: 'Roboto', sans-serif;
 }
 a{
     text-decoration: none;
@@ -19,13 +19,14 @@ a{
 header{
     top: 0;
     z-index: 999;
-    font-family: 'Raleway', sans-serif;
     font-size: .9em;
 }
 .ext-link-top{
     background-color: #F17800;
-    position: absolute;
+    position: fixed;
+    z-index: 99;
     right: 0;
+    top: 0;
     text-align: right;
     display: inline-block;
     padding: 0 10px;
@@ -33,7 +34,6 @@ header{
     line-height: 47px;
     border-top-left-radius: 25px;
     border-bottom-left-radius: 25px;
-    font-family: 'Raleway', sans-serif;
     font-size: .95em;
 }
 nav{
@@ -129,7 +129,7 @@ a.logo img{
 }
 .slide-header-text-large{
     font-size: 1.8em;
-    font-weight: 600;
+    font-weight: 500;
     line-height: 1em;
     letter-spacing: 2px;
     color: #0E869B;
@@ -151,8 +151,6 @@ a.logo img{
     border-radius: 150px;
     left: -55px;
     top: -60px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.3);
-    font-family: 'Cairo', sans-serif;
 }
 .cover-header .cover-header-text-large{
     font-size: 3.8em;
@@ -176,9 +174,6 @@ ol{
 }
 ol li{
     margin-bottom: 10px;
-}
-.aboutus-info{
-    font-family: 'Raleway', sans-serif;
 }
 .aboutus-info-detail h3{
     color:  #F17800;

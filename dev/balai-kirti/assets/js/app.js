@@ -1,6 +1,7 @@
 var menu = false;
 var totalCollection = 25;
 var data;
+var loadTitle;
 document.addEventListener('DOMContentLoaded', function() {
     getKoleksi()
 })
@@ -35,13 +36,20 @@ function getKoleksi(){
 }
 function drawSlider(){
     var appendText = '';
+    var slideTitle = '', slideDesc = '';
     for(i=0;i<data.artikel.length;i++){
-        appendText += '<div class="item">'
+        appendText += '<div class="item" data-title="'+data.artikel[i].title+'" data-desc="'+data.artikel[i].taicing+'">';
         appendText += '<a href="detail.html?koleksi='+data.artikel[i].id+'">'
         appendText += '<img src="'+data.artikel[i].slide_thumbnail+'" alt="thumbnail-'+data.artikel[i].id+'">'
         appendText += '</a>'
         appendText += '</div>'
+        if(i==0) {
+            slideTitle = data.artikel[i].title;
+            slideDesc = data.artikel[i].taicing;
+        }
     }
+    document.getElementById("pageTitle").innerHTML = slideTitle;
+    document.getElementById("pageTaicing").innerHTML = slideDesc;
     document.getElementById('base').innerHTML = appendText;
     var doc = document,
     speed = 400,
@@ -76,6 +84,8 @@ function drawSlider(){
         var info = sliders['base'].getInfo(),
         indexCurrent = info.index+1;
         document.getElementById("numberCollection").innerHTML = indexCurrent;
+        clearTimeout(loadTitle);
+        setTitle(sliders) 
     }
     document.getElementById("next").onclick = function(){
         var numberCollection = document.getElementById("numberCollection").innerText;
@@ -86,17 +96,24 @@ function drawSlider(){
         var info = sliders['base'].getInfo(),
         indexCurrent = info.index+1;
         document.getElementById("numberCollection").innerHTML = indexCurrent;
+        clearTimeout(loadTitle);
+        setTitle(sliders) 
     }       
     document.addEventListener('touchend', handleTouchMove, false);                                                   
     document.addEventListener('mousemove', handleTouchMove, false);                                          
     function handleTouchMove(evt) {
-        setTimeout(function(){ 
-            var info = sliders['base'].getInfo(),
-            indexCurrent = info.displayIndex;
-            document.getElementById("numberCollection").innerHTML = indexCurrent;
-        }, 500);
-                                                  
+        clearTimeout(loadTitle);
+        setTitle(sliders)                                      
     };
+}
+function setTitle(sliders){
+    loadTitle = setTimeout(function(){ 
+        var info = sliders['base'].getInfo(),
+        indexCurrent = info.displayIndex;
+        document.getElementById("numberCollection").innerHTML = indexCurrent;
+        document.getElementById('pageTitle').innerHTML = document.querySelector('.tns-slide-active').getAttribute('data-title');
+        document.getElementById("pageTaicing").innerHTML = document.querySelector('.tns-slide-active').getAttribute('data-desc');
+    }, 500);
 }
 function drawList(){
     var appendText = '';
@@ -108,8 +125,8 @@ function drawList(){
         appendText += '<div class="list-cover"><a href="detail.html?koleksi='+data.artikel[i].id+'"><img src="'+data.artikel[i].foto_writer+'" alt="foto writer"></a></div>';
         appendText += '<div class="list-detail">';
         appendText += '    <a href="detail.html?koleksi='+data.artikel[i].id+'" class="button-link"><span class="arrow right w48"></span></a>';
-        appendText += '    <a href="detail.html?koleksi='+data.artikel[i].id+'"><h2>'+data.artikel[i].title+'</h2></a>';
-        appendText += '    <p>'+data.artikel[i].taicing+'</p>';
+        appendText += '    <a href="detail.html?koleksi='+data.artikel[i].id+'"><h2>'+data.artikel[i].writer+'</h2></a>';
+        appendText += '    <p>'+data.artikel[i].description_writer+'</p>';
         appendText += '</div>';
         appendText += '</div>';
     }
@@ -122,8 +139,8 @@ function drawPage(){
     }else{
         setCoverImg(data.cover_mobile,'mobile');
     }
-    document.getElementById("pageTitle").innerHTML = data.title;
-    document.getElementById("pageTaicing").innerHTML = data.taicing;
+    //document.getElementById("pageTitle").innerHTML = data.title;
+    //document.getElementById("pageTaicing").innerHTML = data.taicing;
     var elements = document.querySelectorAll('.cover-header-text-small, .slide-header-text-small');
     elements.forEach(function(elem) {
         elem.innerHTML = data.koleksi_detail;
