@@ -735,7 +735,9 @@ span.arrow.w32{
         bottom: auto;
     }
     .overlay-zoom .tns-controls{
-        top: 80px;
+        top: 360px;
+        right: 50%;
+        margin-right: -50px;
     }
     .detail-container h3{
         width: auto;
