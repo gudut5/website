@@ -80,7 +80,7 @@ function updatePage(collection){
             appendWritter += '<img src="'+data.artikel[i].foto_writer+'" alt="writter">';
             appendWritter += '<div class="detail-writter-content">';
             appendWritter += '<h4>'+data.artikel[i].writer+'</h4>';
-            appendWritter += '<p>'+data.artikel[i].description_writer+'</p>';
+            appendWritter += data.artikel[i].description_writer;
             appendWritter += '</div>';
             appendWritter += '</div>';
             appendWritter += '<div class="clear-float"></div>';
@@ -89,7 +89,7 @@ function updatePage(collection){
             document.getElementById('year').innerHTML = new Date().getFullYear(data.artikel[i].date_published);
             document.getElementById('writer').innerHTML = data.artikel[i].writer;
             document.getElementById('publisher').innerHTML = data.artikel[i].publisher;
-            document.getElementById('imgThumbnail').setAttribute('src', data.artikel[i].slide_thumbnail);
+            document.getElementById('imgThumbnail').setAttribute('src', data.artikel[i].book_cover);
             document.getElementById('contentTitle').innerHTML = 'Buku '+data.artikel[i].title;
             document.getElementById('contentTaicing').innerHTML = data.artikel[i].taicing;
             document.getElementById('contentText').innerHTML = data.artikel[i].content+appendWritter;
