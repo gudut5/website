@@ -261,10 +261,12 @@ a.icon-socmed.youtube svg{
 }
 .list-collection .list-detail h2{
     color: #F17800;
-    margin-bottom: 20px;
+    margin-top: 20px;
 }
 .list-collection .list-detail p{
-    font-size: 1.1em;
+    font-size: 1em;
+    line-height: 1.5em;
+    margin-bottom: 20px;
 }
 span.arrow{
     background-repeat: no-repeat;
