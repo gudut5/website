@@ -22,7 +22,6 @@ function getKoleksi(){
         data = JSON.parse(request.responseText);
         drawPage();
         drawSlider();
-        drawList();
       } else {
         // We reached our target server, but it returned an error
     

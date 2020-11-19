@@ -85,14 +85,14 @@ function updatePage(collection){
             appendWritter += '</div>';
             appendWritter += '<div class="clear-float"></div>';
 
-            document.getElementById('headerTitle').innerHTML = data.artikel[i].title;
+            //document.getElementById('headerTitle').innerHTML = data.artikel[i].title;
             document.getElementById('year').innerHTML = data.artikel[i].date_published;
             document.getElementById('writer').innerHTML = data.artikel[i].writer;
             document.getElementById('publisher').innerHTML = data.artikel[i].publisher;
             document.getElementById('imgThumbnail').setAttribute('src', data.artikel[i].book_cover);
             document.getElementById('contentTitle').innerHTML = 'Buku '+data.artikel[i].title;
             document.getElementById('contentTaicing').innerHTML = data.artikel[i].taicing;
-            document.getElementById('contentText').innerHTML = data.artikel[i].content+appendWritter;
+            document.getElementById('contentCollection').innerHTML = data.artikel[i].content+appendWritter;
             document.getElementById('captionThumbnail').innerHTML = data.artikel[i].caption_thumbnail;
             
             if(intViewportWidth > 768){

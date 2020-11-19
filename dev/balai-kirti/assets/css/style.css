@@ -91,18 +91,18 @@ main{
     font-weight: 100;
     float: right;
 }
-.slide-left-layout a.logo-kemendikbud{
+.slide-left-layout .logo-kemendikbud{
     position: absolute;
     top: 0;
     left: 110px;
 }
-.slide-left-layout a.logo{
+.slide-left-layout .logo{
     position: absolute;
     top: 0;
     left: 160px;
 }
-.slide-left-layout a.logo-kemendikbud img,
-.slide-left-layout a.logo img{
+.slide-left-layout .logo-kemendikbud img,
+.slide-left-layout .logo img{
     height: 45px;
 }
 .cover{
@@ -111,6 +111,18 @@ main{
     object-fit: contain;
     object-position: center;
     position: relative;
+}
+.cover h1{
+    position: absolute;
+    text-align: right;
+    text-shadow: 1px 3px 10px #000000;
+}
+.cover h1 .textb{
+    display: block;
+}
+.cover h1 .text-h1-2{
+    color: #F17800;
+    display: inline-block;
 }
 .cover img{
     min-width: 100%;
@@ -153,7 +165,7 @@ main{
     background-color: #0E869B;
     color: #ffffff;
 }
-.slide-contents-header h1{
+.slide-contents-header h2{
     line-height: 1em;
     font-weight: 800;
     margin: 0;
@@ -378,6 +390,23 @@ span.arrow.w48{
     position: absolute;
     z-index: 3;
 }
+.pengantar-container{
+    background-color: #E5E5E5;
+    color: #222222;
+}
+.slide-left-layout{
+    width: auto;
+    padding: 20px;
+    position: static;
+    top: 0;
+    left: 0;
+    z-index: 0;
+}
+ul.logo-container li{
+    list-style: none;
+    display: inline;
+}
+
 @media(max-width: 480px){
     header{
         position: relative;
@@ -451,26 +480,6 @@ span.arrow.w48{
         left: -6px;
         margin-top: 20px;
     }
-    .slide-left-layout{
-        width: 120px;
-        padding: 10px;
-        position: absolute;
-        top: 0;
-        left: 0;
-        z-index: 9999;
-    }
-    .slide-left-layout::after{
-        content: "";
-        background-color: #ffffff;
-        width: 180px;
-        height: 180px;
-        border-radius: 150px;
-        display: block;
-        position: absolute;
-        z-index: -1;
-        top: -50px;
-        left: -65px;
-    }
     .slide-contents{
         display: block;
     }
@@ -485,7 +494,7 @@ span.arrow.w48{
         right: 0;
         background-color: #000000;
         width: 100vw;
-        height: 140vw;
+        height: 100vw;
         display: block;
     }
     .slide-contents-header{
@@ -500,9 +509,8 @@ span.arrow.w48{
         z-index: 3;
         margin: 0 20px;
         padding: 20px 0;
-        margin-left: 80px;
     }
-    .slide-contents-header h1{
+    .slide-contents-header h2{
         font-size: 2.3em;
     }
     .slide-contents-header p{
@@ -576,15 +584,63 @@ span.arrow.w48{
     }
     .logo-container{
         position: absolute;
-        top: 0px;
-        left: 125px;
+        top: -3px;
+        left: 20px;
     }
-    .logo-container a.logo{
+    .logo-container .logo{
         margin-left: -5px;
     }
-    .logo-container a.logo img,
-    a.logo img{
-        height: 45px;
+    .logo-container .logo img,
+    .logo img{
+        height: 50px;
+    }
+    .pengantar-width{
+        margin: 0 20px;
+        padding: 20px 0;
+    }
+    .cover h1{
+        width: auto;
+        margin: 20px;
+    }
+    .cover h1 .text-h1-1{
+        line-height: 1em;
+        font-size: 16px;
+    }
+    .cover h1 .text-h1-2{
+        font-size: 60px;
+        line-height: .85em;
+    }
+    .cover h1 .text-h1-3{
+        font-size: 40px;
+        line-height: 1em;
+    }
+    .cover h1 .text-h1-4{
+        font-size: 30px;
+        line-height: 1em;
+    }
+    .pengantar-width{
+        display: block;
+        align-items: flex-start;
+        justify-content: space-between;
+    }
+    .pengantar-width .pengantar-text{
+        padding: 20px 0;
+        padding-bottom: 40px;
+        font-size: 20px;
+        position: relative;
+    }
+    
+    .pengantar-width h2{
+        text-align: left;
+        color: #F17800;
+        font-size: 47px;
+    }
+    .pengantar-text a{
+        color: #222222;
+        text-align: right;
+        position: absolute;
+        right: 20px;
+        bottom: 0;
     }
 }
 @media(min-width: 768px){
@@ -605,26 +661,6 @@ span.arrow.w48{
         font-weight: 600;
         line-height: 1em;
     }
-    .slide-left-layout{
-        width: auto;
-        padding: 20px;
-        position: static;
-        top: 0;
-        left: 0;
-        z-index: 0;
-    }
-    .slide-left-layout::after{
-        content: "";
-        background-color: transparent;
-        width: 0;
-        height: 0;
-        border-radius: 0;
-        display: none;
-        position: absolute;
-        z-index: -1;
-        top: -120px;
-        left: -100px;
-    }
     .slide-header-text{
         bottom: -20px;
     }
@@ -636,12 +672,57 @@ span.arrow.w48{
         position: absolute;
         top: -3px;
     }
-    .logo-container a.logo{
+    .logo-container .logo{
         margin-left: 0;
     }
-    .logo-container a.logo img,
-    a.logo img{
-        height: 100px;
+    .logo-container .logo img,
+    .logo img{
+        height: 90px;
+    }
+    .pengantar-width{
+        margin: 0 50px;
+        padding: 50px 0;
+    }
+    .cover h1{
+        width: 500px;
+        margin: 40px 0;
+    }
+    .cover h1 .text-h1-1{
+        line-height: 1em;
+    }
+    .cover h1 .text-h1-2{
+        font-size: 3em;
+        line-height: .85em;
+    }
+    .cover h1 .text-h1-3{
+        font-size: 2em;
+        line-height: 1em;
+    }
+    .cover h1 .text-h1-4{
+        font-size: 1.5em;
+        line-height: 1em;
+    }
+    .pengantar-width{
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+    }
+    .pengantar-width .pengantar-text{
+        padding: 20px 40px;
+        font-size: 20px;
+        position: relative;
+    }
+    .pengantar-width h2{
+        text-align: right;
+        color: #F17800;
+        font-size: 47px;
+    }
+    .pengantar-text a{
+        color: #222222;
+        text-align: right;
+        position: absolute;
+        right: 40px;
+        bottom: 0;
     }
 }
 @media(min-width: 769px){
@@ -708,7 +789,7 @@ span.arrow.w48{
         margin: 0;
         padding: 0;
     }
-    .slide-contents-header h1{
+    .slide-contents-header h2{
         font-size: 2.8em;
     }
     .slide-contents-header p{
@@ -801,7 +882,7 @@ span.arrow.w48{
         margin: 0;
         padding: 0;
     }
-    .slide-contents-header h1{
+    .slide-contents-header h2{
         font-size: 3.3em;
     }
     .slide-contents-header p{

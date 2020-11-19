@@ -22,18 +22,18 @@ a{
 .slide-left-layout{
     position: relative;
 }
-.slide-left-layout a.logo-kemendikbud{
+.slide-left-layout .logo-kemendikbud{
     position: absolute;
     top: 0;
     left: 110px;
 }
-.slide-left-layout a.logo{
+.slide-left-layout .logo{
     position: absolute;
     top: 0;
     left: 160px;
 }
-.slide-left-layout a.logo-kemendikbud img,
-.slide-left-layout a.logo img{
+.slide-left-layout .logo-kemendikbud img,
+.slide-left-layout .logo img{
     height: 45px;
 }
 header{
@@ -256,13 +256,11 @@ span.arrow.w32{
     line-height: 1em;
     font-weight: 800;
     padding: 0;
-    text-shadow: 0px 0px 20px #000000;
     text-transform: uppercase;
 }
 .detail-cover-text {
-    font-size: 1.2em;
+    font-size: 1em;
     display: flex;
-    text-shadow: 0px 0px 3px #000000;
     line-height: 1.6em;
 }
 .detail-cover-text .label{
@@ -274,8 +272,7 @@ span.arrow.w32{
     flex-shrink: 0;
 }
 .detail-cover-text .cover-text{
-    color: #FFC000;
-    font-weight: 800;
+    color: #ffffff;
 }
 .detail-container{
     background-color: #ffffff;
@@ -286,7 +283,6 @@ span.arrow.w32{
 .detail-container h2{
     margin: 0;
     font-weight: 800;
-    letter-spacing: -1px;
 }
 .detail-container h2.white{
     color: #ffffff;
@@ -307,15 +303,15 @@ span.arrow.w32{
 .detail-container h3{
     margin: 0;
     font-size: 2em;
-
 }
+
 .detail-container h4{
     margin: 10px 0;
     font-weight: 500;
 }
 .detail-number{
     position: absolute;
-    z-index: 3;
+    z-index: 4;
     font-size: 15em;
     font-weight: 900;
     opacity: .9;
@@ -481,7 +477,6 @@ span.arrow.w32{
 }
 #contentText{
     width: 100%;
-    padding-right: 17px;
 }
 .overlay-zoom .item,
 #base_wrapper .item{
@@ -669,11 +664,11 @@ span.arrow.w32{
         display: flex;
     }
     .detail-cover-container{
-        padding: 40px 125px;
-        max-width: 70%;
+        padding: 40px;
+        max-width: 60%;
     }
     .detail-cover-container h1{
-        font-size: 3.5em;
+        font-size: 2em;
         margin: 20px 0;
     }
     .detail-layout-right{
@@ -711,7 +706,7 @@ span.arrow.w32{
         bottom: -20px;
     }
     .detail-number{
-        right: 70px;
+        right: 50px;
     }
 }
 
@@ -729,10 +724,10 @@ span.arrow.w32{
     }
     .detail-content,
     .detail-header-orange{
-        left: -135px;
+        left: calc(50vw - 325px);
     }
     .detail-content-width{
-        width: 320px;
+        width: calc(100vw - 60px);
         margin: 0 auto;
     }
     .detail-container h2{
@@ -780,6 +775,7 @@ span.arrow.w32{
         box-sizing: border-box;
         padding-bottom: 120px;
         min-height: 650px;
+        padding-right: 0;
     }
     .detail-content{
         height: auto;
@@ -790,15 +786,21 @@ span.arrow.w32{
     
     .logo-container{
         position: absolute;
-        top: 0px;
-        left: 125px;
+        top: -3px;
+        left: 20px;
     }
-    .logo-container a.logo{
+    .logo-container .logo{
         margin-left: -5px;
     }
-    .logo-container a.logo img,
-    a.logo img{
-        height: 45px;
+    .logo-container .logo img,
+    .logo img{
+        height: 50px;
+    }
+    .detail-cover-container h3{
+        font-weight: 400;
+        line-height: 1.4em;
+        text-align: center;
+        font-size: 1.1em;
     }
 }
 @media(min-width: 768px){
@@ -865,11 +867,12 @@ span.arrow.w32{
         width: 300px;
     }
     #contentText{
-        height: 300px;
+        height: 320px;
         overflow-x: hidden;
         overflow-y: scroll;
         box-sizing: content-box;
         padding-bottom: 0;
+        padding-right: 17px;
     }
     .detail-content{
         height: 650px;
@@ -881,12 +884,18 @@ span.arrow.w32{
         position: absolute;
         top: -3px;
     }
-    .logo-container a.logo{
+    .logo-container .logo{
         margin-left: 0;
     }
-    .logo-container a.logo img,
-    a.logo img{
-        height: 100px;
+    .logo-container .logo img,
+    .logo img{
+        height: 90px;
+    }
+    .detail-cover-container h3{
+        font-weight: 400;
+        line-height: 1.7em;
+        text-align: center;
+        font-size: 1.3em;
     }
 }
 @media(min-width: 480px) and (max-width: 769px){
