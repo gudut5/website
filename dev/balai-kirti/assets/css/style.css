@@ -423,6 +423,14 @@ ul.logo-container li{
     margin-bottom: 20px;
     line-height: 1.5em;
 }
+.logo-home{
+    position: absolute;
+    right: 110px;
+    top: 8px;
+}
+.logo-home img{
+    height: 28px;
+}
 @media(max-width: 480px){
     header{
         position: relative;

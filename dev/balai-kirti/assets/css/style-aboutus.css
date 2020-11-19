@@ -245,6 +245,7 @@ ul.logo-container li{
     list-style: none;
     display: inline;
 }
+
 @media(max-width: 480px){
     header{
         position: relative;

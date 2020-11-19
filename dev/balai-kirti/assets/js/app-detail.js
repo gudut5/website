@@ -84,7 +84,8 @@ function updatePage(collection){
             appendWritter += '</div>';
             appendWritter += '</div>';
             appendWritter += '<div class="clear-float"></div>';
-
+            
+            document.getElementById('headerQuoteBottom').innerHTML = data.artikel[i].quote;
             document.getElementById('headerQuote').innerHTML = data.artikel[i].quote;
             document.getElementById('year').innerHTML = data.artikel[i].date_published;
             document.getElementById('writer').innerHTML = data.artikel[i].writer;
@@ -160,6 +161,7 @@ function updatePage(collection){
                 document.querySelector('.detail-galery').style.visibility = "hidden";
                 document.getElementById('base_wrapper').innerHTML = '';
             }
+            window.scrollTo(0,0);
         }
     }
 }
