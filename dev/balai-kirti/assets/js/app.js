@@ -122,7 +122,6 @@ function drawList(){
         var splited = data.artikel[i].description_writer.match(/<[^> ]+[^>]*>[^<]*/g);
         var splitedDesc = '';
         if(splited !== null) splitedDesc = splited[0];
-        
         var setList = 'even'
         if (i%2 == 0) setList = 'odd'
         appendText += '<div class="list-collection '+setList+' dflex">';
@@ -130,7 +129,7 @@ function drawList(){
         appendText += '<div class="list-detail">';
         appendText += '    <a href="detail.html?koleksi='+data.artikel[i].id+'" class="button-link"><span class="arrow right w48"></span></a>';
         appendText += '    <a href="detail.html?koleksi='+data.artikel[i].id+'"><h2>'+data.artikel[i].writer+'</h2></a>';
-        appendText += splitedDesc+"..";
+        appendText += splitedDesc+"..</p>";
         appendText += '</div>';
         appendText += '</div>';
     }
