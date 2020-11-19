@@ -642,7 +642,8 @@ ul.logo-container li{
     .pengantar-width .pengantar-text{
         padding: 20px 0;
         padding-bottom: 40px;
-        font-size: 20px;
+        font-size: 18px;
+        line-height: 1.4em;
         position: relative;
     }
     
@@ -725,7 +726,9 @@ ul.logo-container li{
     }
     .pengantar-width .pengantar-text{
         padding: 20px 40px;
-        font-size: 20px;
+        padding-bottom: 40px;
+        font-size: 18px;
+        line-height: 1.5em;
         position: relative;
     }
     .pengantar-width h2{
