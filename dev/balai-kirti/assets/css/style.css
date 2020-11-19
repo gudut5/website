@@ -29,12 +29,13 @@ header{
     top: 0;
     text-align: right;
     display: inline-block;
-    padding: 0 10px;
-    padding-left: 20px;
-    line-height: 47px;
+    padding: 0 5px;
+    padding-left: 10px;
+    line-height: 30px;
+    margin-top: 8px;
     border-top-left-radius: 25px;
     border-bottom-left-radius: 25px;
-    font-size: .85em;
+    font-size: .8em;
 }
 nav{
     background-color: #000000;
@@ -86,17 +87,23 @@ main{
 }
 .welcome-text span{
     margin-left: 100px;
-    font-size: 1.1rem;
+    font-size: 1.5rem;
+    font-weight: 100;
+    float: right;
 }
-a.logo{
+.slide-left-layout a.logo-kemendikbud{
     position: absolute;
-}
-a.logo img{
-    height: 100px;
-}
-.slide-left-layout a.logo{
     top: 0;
     left: 110px;
+}
+.slide-left-layout a.logo{
+    position: absolute;
+    top: 0;
+    left: 160px;
+}
+.slide-left-layout a.logo-kemendikbud img,
+.slide-left-layout a.logo img{
+    height: 45px;
 }
 .cover{
     background-color: #BBA16D;
@@ -125,7 +132,7 @@ a.logo img{
 }
 .cover-header .cover-header-text-large{
     font-size: 3.8em;
-    font-weight: 200;
+    font-weight: 400;
     line-height: 1em;
 }
 .cover-header .cover-header-text-small{
@@ -141,7 +148,6 @@ a.logo img{
     font-weight: 900;
     line-height: 1em;
     position: relative;
-    font-family: 'Archivo Black', sans-serif;
 }
 .slide-contents{
     background-color: #0E869B;
@@ -372,9 +378,6 @@ span.arrow.w48{
     position: absolute;
     z-index: 3;
 }
-.slide-number{
-    font-family: Arial, Helvetica, sans-serif;
-}
 @media(max-width: 480px){
     header{
         position: relative;
@@ -427,16 +430,17 @@ span.arrow.w48{
         display: block;
     }
     .slide-header-text-small{
-        font-size: .8em;
+        font-size: .6em;
         font-weight: 400;
         line-height: 1.2em;
         padding-left: 3px;
+        width: 90px;
     }
 }
 @media(max-width: 768px){
     
     .slide-header-text-large{
-        font-size: 1.8em;
+        font-size: 1.7em;
         font-weight: 500;
         line-height: 1em;
         letter-spacing: 2px;
@@ -458,14 +462,14 @@ span.arrow.w48{
     .slide-left-layout::after{
         content: "";
         background-color: #ffffff;
-        width: 220px;
-        height: 220px;
+        width: 180px;
+        height: 180px;
         border-radius: 150px;
         display: block;
         position: absolute;
         z-index: -1;
-        top: -70px;
-        left: -80px;
+        top: -50px;
+        left: -65px;
     }
     .slide-contents{
         display: block;
@@ -566,6 +570,22 @@ span.arrow.w48{
     .slide-header-text{
         bottom: -10px;
     }
+    .slide-header-text-large,
+    .slide-header-text-small{
+        text-align: left;
+    }
+    .logo-container{
+        position: absolute;
+        top: 0px;
+        left: 125px;
+    }
+    .logo-container a.logo{
+        margin-left: -5px;
+    }
+    .logo-container a.logo img,
+    a.logo img{
+        height: 45px;
+    }
 }
 @media(min-width: 768px){
     .slide-header{
@@ -582,7 +602,7 @@ span.arrow.w48{
     }
     .slide-header-text-large{
         font-size: 2.5em;
-        font-weight: 500;
+        font-weight: 600;
         line-height: 1em;
     }
     .slide-left-layout{
@@ -606,7 +626,22 @@ span.arrow.w48{
         left: -100px;
     }
     .slide-header-text{
-        bottom: -15px;
+        bottom: -20px;
+    }
+    .slide-header-text-large,
+    .slide-header-text-small{
+        text-align: right;
+    }
+    .logo-container{
+        position: absolute;
+        top: -3px;
+    }
+    .logo-container a.logo{
+        margin-left: 0;
+    }
+    .logo-container a.logo img,
+    a.logo img{
+        height: 100px;
     }
 }
 @media(min-width: 769px){
@@ -776,17 +811,18 @@ span.arrow.w48{
         font-size: 18em;
         font-weight: 800;
         position: absolute;
-        right: 260px;
+        right: 120px;
         left: auto;
-        top:-40px;
+        top:-110px;
         color:#0DA1BA;
         line-height: 1em;
-        text-align: right;
+        text-align: left;
         margin:0;
         padding:0;
         letter-spacing: -20px;
         z-index: 2;
         opacity: .5;
+        width: 300px;
     }
     .slide-nav-container{
         position: absolute;
@@ -853,6 +889,9 @@ span.arrow.w48{
     .welcome-text, nav ul{
         padding: 0 20px;
     }
+    nav ul{
+        padding-right: 0;
+    }
     .list-collection .list-detail a.button-link{
         bottom: 20px;
     }
@@ -870,6 +909,9 @@ span.arrow.w48{
     }
     .welcome-text, nav ul{
         padding: 0 58px;
+    }
+    nav ul{
+        padding-right: 0;
     }
     header{
         width: 1130px;

@@ -19,16 +19,22 @@ a{
     text-decoration: none;
     color: #ffffff;
 }
-a.logo img{
-    height: 100px;
-}
 .slide-left-layout{
     position: relative;
+}
+.slide-left-layout a.logo-kemendikbud{
+    position: absolute;
+    top: 0;
+    left: 110px;
 }
 .slide-left-layout a.logo{
     position: absolute;
     top: 0;
-    left: 110px;
+    left: 160px;
+}
+.slide-left-layout a.logo-kemendikbud img,
+.slide-left-layout a.logo img{
+    height: 45px;
 }
 header{
     top: 0;
@@ -107,9 +113,10 @@ header{
     top: 0;
     text-align: right;
     display: inline-block;
-    padding: 0 10px;
-    padding-left: 20px;
-    line-height: 47px;
+    padding: 0 5px;
+    padding-left: 10px;
+    line-height: 30px;
+    margin-top: 8px;
     border-top-left-radius: 25px;
     border-bottom-left-radius: 25px;
     font-size: .85em;
@@ -280,7 +287,6 @@ span.arrow.w32{
     margin: 0;
     font-weight: 800;
     letter-spacing: -1px;
-    font-family: 'Archivo Black', sans-serif;
 }
 .detail-container h2.white{
     color: #ffffff;
@@ -318,7 +324,6 @@ span.arrow.w32{
     margin: 0;
     padding: 0;
     letter-spacing: -20px;
-    font-family: Arial, Helvetica, sans-serif;
 }
 .detail-content{
     background-color: #F17800;
@@ -393,25 +398,25 @@ span.arrow.w32{
 .slide-left-layout::after{
     content: "";
     background-color: #ffffff;
-    width: 220px;
-    height: 220px;
+    width: 180px;
+    height:180px;
     border-radius: 150px;
     display: block;
     position: absolute;
     z-index: -1;
-    top: -70px;
-    left: -80px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    top: -50px;
+    left: -60px;
 }
 .slide-header-text-small{
-    font-size: .9em;
+    font-size: .7em;
     font-weight: 400;
     line-height: 1.2em;
     padding-left: 3px;
     color: #0E869B;
+    width: 90px;
 }
 .slide-header-text-large{
-    font-size: 1.9em;
+    font-size: 1.8em;
     font-weight: 500;
     line-height: 1em;
     letter-spacing: 2px;
@@ -670,7 +675,6 @@ span.arrow.w32{
     .detail-cover-container h1{
         font-size: 3.5em;
         margin: 20px 0;
-        font-family: 'Archivo Black', sans-serif;
     }
     .detail-layout-right{
         padding: 60px 0;
@@ -783,6 +787,19 @@ span.arrow.w32{
     .detail-container h2{
         margin-top: 8px;
     }
+    
+    .logo-container{
+        position: absolute;
+        top: 0px;
+        left: 125px;
+    }
+    .logo-container a.logo{
+        margin-left: -5px;
+    }
+    .logo-container a.logo img,
+    a.logo img{
+        height: 45px;
+    }
 }
 @media(min-width: 768px){
     .bg-black{
@@ -859,6 +876,17 @@ span.arrow.w32{
     }
     .detail-container h2{
         margin-top: 15px;
+    }
+    .logo-container{
+        position: absolute;
+        top: -3px;
+    }
+    .logo-container a.logo{
+        margin-left: 0;
+    }
+    .logo-container a.logo img,
+    a.logo img{
+        height: 100px;
     }
 }
 @media(min-width: 480px) and (max-width: 769px){
