@@ -406,7 +406,23 @@ ul.logo-container li{
     list-style: none;
     display: inline;
 }
-
+.page-pengantar-container{
+    color: #124D58;
+    margin: 0 60px;
+    padding: 40px 0;
+}
+.page-pengantar-container h2{
+    text-align: center;
+    margin: 40px 0;
+    margin-top: 0;
+    font-size: 3em;
+    font-weight: 500;
+}
+.page-pengantar-container p{
+    font-size: 1.1em;
+    margin-bottom: 20px;
+    line-height: 1.5em;
+}
 @media(max-width: 480px){
     header{
         position: relative;
