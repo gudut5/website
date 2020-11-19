@@ -85,7 +85,7 @@ function updatePage(collection){
             appendWritter += '</div>';
             appendWritter += '<div class="clear-float"></div>';
 
-            //document.getElementById('headerTitle').innerHTML = data.artikel[i].title;
+            document.getElementById('headerQuote').innerHTML = data.artikel[i].quote;
             document.getElementById('year').innerHTML = data.artikel[i].date_published;
             document.getElementById('writer').innerHTML = data.artikel[i].writer;
             document.getElementById('publisher').innerHTML = data.artikel[i].publisher;
