@@ -112,11 +112,11 @@ function setTitle(sliders){
         document.getElementById("numberCollection").innerHTML = indexCurrent;
         document.getElementById('pageTitle').innerHTML = document.querySelector('.tns-slide-active').getAttribute('data-title');
         document.getElementById("pageTaicing").innerHTML = document.querySelector('.tns-slide-active').getAttribute('data-desc');
-        var intViewportWidth = window.innerWidth;
-        if(intViewportWidth < 768){
-            var target = document.getElementById("scrolledTop");
-            animate(document.scrollingElement || document.documentElement, "scrollTop", "", 2000, target.offsetTop, 100, true);  
-        }
+        //var intViewportWidth = window.innerWidth;
+        //if(intViewportWidth < 768){
+        //    var target = document.getElementById("scrolledTop");
+        //    animate(document.scrollingElement || document.documentElement, "scrollTop", "", 2000, target.offsetTop, 100, true);  
+        //}
         
     }, 500);
 }
