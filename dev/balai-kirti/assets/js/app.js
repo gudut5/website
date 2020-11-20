@@ -4,9 +4,17 @@ var data;
 var loadTitle;
 document.addEventListener('DOMContentLoaded', function() {
     getKoleksi()
+    seCarouselCover()
 })
 function setCoverImg(imgUrl,typeView){
     var coverImg = document.getElementById('cover-image');
+    var oImg = document.createElement("img");
+    oImg.setAttribute('src', imgUrl);
+    oImg.setAttribute('alt', 'cover '+typeView);
+    coverImg.appendChild(oImg);
+}
+function setCoverImgSlide(imgUrl,typeView,el){
+    var coverImg = document.getElementById(el);
     var oImg = document.createElement("img");
     oImg.setAttribute('src', imgUrl);
     oImg.setAttribute('alt', 'cover '+typeView);
@@ -105,13 +113,40 @@ function drawSlider(){
         setTitle(sliders)                                    
     };
 }
+function seCarouselCover(){
+    var doc2 = document,
+    speed2 = 400,
+    sliders2 = new Object(),
+    options2 = {
+        'rewind': {
+        container: '',
+        items: 1,
+        rewind: true,
+        slideBy: 'page',
+        controlsText: ["&lsaquo;","&rsaquo;"],
+        autoplay: true,
+        autoplayHoverPause: true,
+        autoplayButtonOutput: false,
+        touch: true,
+        preventScrollOnTouch: true
+        }
+    };
+    var item2 = options2['rewind'];
+    item2.container = '#coverSlide';
+    item2.swipeAngle = false;
+    if (!item2.speed) { item2.speed2 = speed2; }
+
+    if (doc2.querySelector(item2.container)) {
+        sliders2['rewind'] = tns(options2['rewind']);
+    }
+}
 function setTitle(sliders){
     loadTitle = setTimeout(function(){ 
         var info = sliders['base'].getInfo(),
         indexCurrent = info.displayIndex;
         document.getElementById("numberCollection").innerHTML = indexCurrent;
-        document.getElementById('pageTitle').innerHTML = document.querySelector('.tns-slide-active').getAttribute('data-title');
-        document.getElementById("pageTaicing").innerHTML = document.querySelector('.tns-slide-active').getAttribute('data-desc');
+        document.getElementById('pageTitle').innerHTML = document.querySelector('#base_wrapper .tns-slide-active').getAttribute('data-title');
+        document.getElementById("pageTaicing").innerHTML = document.querySelector('#base_wrapper .tns-slide-active').getAttribute('data-desc');
         //var intViewportWidth = window.innerWidth;
         //if(intViewportWidth < 768){
         //    var target = document.getElementById("scrolledTop");
@@ -143,9 +178,17 @@ function drawList(){
 function drawPage(){
     var intViewportWidth = window.innerWidth;
     if(intViewportWidth > 768){
-        setCoverImg(data.cover,'desktop');
+        //setCoverImg(data.cover,'desktop');
+        //document.querySelector('.set-bg-cover').style.backgroundImage = "url('"+data.cover1+"')";
+        setCoverImgSlide(data.cover1,'desktop','coverSlide1');
+        setCoverImgSlide(data.cover2,'desktop','coverSlide2');
+        setCoverImgSlide(data.cover3,'desktop','coverSlide3');
     }else{
-        setCoverImg(data.cover_mobile,'mobile');
+        //setCoverImg(data.cover_mobile,'mobile');
+        //document.querySelector('.set-bg-cover').style.backgroundImage = "url('"+data.cover_mobile1+"')";
+        setCoverImgSlide(data.cover_mobile1,'mobile','coverSlide1');
+        setCoverImgSlide(data.cover_mobile2,'mobile','coverSlide2');
+        setCoverImgSlide(data.cover_mobile3,'mobile','coverSlide3');
     }
     //document.getElementById("pageTitle").innerHTML = data.title;
     //document.getElementById("pageTaicing").innerHTML = data.taicing;
