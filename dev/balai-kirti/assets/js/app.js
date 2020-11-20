@@ -102,7 +102,7 @@ function drawSlider(){
     document.addEventListener('mousemove', handleTouchMove, false);                                          
     function handleTouchMove(evt) {
         clearTimeout(loadTitle);
-        setTitle(sliders)                                      
+        setTitle(sliders)                                    
     };
 }
 function setTitle(sliders){
@@ -112,6 +112,12 @@ function setTitle(sliders){
         document.getElementById("numberCollection").innerHTML = indexCurrent;
         document.getElementById('pageTitle').innerHTML = document.querySelector('.tns-slide-active').getAttribute('data-title');
         document.getElementById("pageTaicing").innerHTML = document.querySelector('.tns-slide-active').getAttribute('data-desc');
+        var intViewportWidth = window.innerWidth;
+        if(intViewportWidth < 768){
+            var target = document.getElementById("scrolledTop");
+            animate(document.scrollingElement || document.documentElement, "scrollTop", "", 2000, target.offsetTop, 100, true);  
+        }
+        
     }, 500);
 }
 function drawList(){
@@ -178,5 +184,27 @@ function drawPage(){
         document.querySelector('.info-map').setAttribute('href', data.location);
     }else{
         document.querySelector('.info-map').style.display = "none";
+    }
+}
+function animate(elem, style, unit, from, to, time, prop) {
+    if (!elem) {
+        return;
+    }
+    var start = new Date().getTime(),
+        timer = setInterval(function () {
+            var step = Math.min(1, (new Date().getTime() - start) / time);
+            if (prop) {
+                elem[style] = (from + step * (to - from))+unit;
+            } else {
+                elem.style[style] = (from + step * (to - from))+unit;
+            }
+            if (step === 1) {
+                clearInterval(timer);
+            }
+        }, 25);
+    if (prop) {
+          elem[style] = from+unit;
+    } else {
+          elem.style[style] = from+unit;
     }
 }
