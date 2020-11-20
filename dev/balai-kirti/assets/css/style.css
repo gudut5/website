@@ -629,6 +629,7 @@ ul.logo-container li{
     .cover h1 .text-h1-1{
         line-height: 1em;
         font-size: 16px;
+        font-weight: 400;
     }
     .cover h1 .text-h1-2{
         font-size: 60px;
@@ -666,6 +667,7 @@ ul.logo-container li{
         position: absolute;
         right: 20px;
         bottom: 0;
+        font-size: 18px;
     }
 }
 @media(min-width: 768px){
@@ -714,6 +716,7 @@ ul.logo-container li{
     }
     .cover h1 .text-h1-1{
         line-height: 1em;
+        font-weight: 400;
     }
     .cover h1 .text-h1-2{
         font-size: 3em;
@@ -750,6 +753,7 @@ ul.logo-container li{
         position: absolute;
         right: 40px;
         bottom: 0;
+        font-size: 18px;
     }
 }
 @media(min-width: 769px){
