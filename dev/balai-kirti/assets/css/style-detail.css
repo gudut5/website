@@ -812,7 +812,7 @@ h3.quote::after{
         left: 20px;
     }
     .logo-container .logo{
-        margin-left: -5px;
+        margin-left: 0;
     }
     .logo-container .logo img,
     .logo img{

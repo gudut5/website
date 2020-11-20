@@ -393,11 +393,11 @@ ul.logo-container li{
         left: 20px;
     }
     .logo-container .logo{
-        margin-left: -7px;
+        margin-left: 0;
     }
     .logo-container .logo img,
     .logo img{
-        height: 45px;
+        height: 50px;
     }
 }
 @media(min-width: 768px){
