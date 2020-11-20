@@ -75,25 +75,24 @@ function updatePage(collection){
     for(i=0;i<data.artikel.length;i++){
         if(data.artikel[i].id == collection){
             var appendWritter = '';
-            appendWritter += '<h4>Penulis</h4>';
             appendWritter += '<div class="detail-writter">';
             appendWritter += '<img src="'+data.artikel[i].foto_writer+'" alt="writter">';
             appendWritter += '<div class="detail-writter-content">';
-            appendWritter += '<h4>'+data.artikel[i].writer+'</h4>';
-            appendWritter += data.artikel[i].description_writer;
+            //appendWritter += '<h4>'+data.artikel[i].writer+'</h4>';
+            appendWritter += data.artikel[i].content;
             appendWritter += '</div>';
             appendWritter += '</div>';
             appendWritter += '<div class="clear-float"></div>';
             
-            document.getElementById('headerQuoteBottom').innerHTML = data.artikel[i].quote;
-            document.getElementById('headerQuote').innerHTML = data.artikel[i].quote;
+            //document.getElementById('headerQuoteBottom').innerHTML = data.artikel[i].quote;
+            //document.getElementById('headerQuote').innerHTML = data.artikel[i].quote;
             document.getElementById('year').innerHTML = data.artikel[i].date_published;
             document.getElementById('writer').innerHTML = data.artikel[i].writer;
             document.getElementById('publisher').innerHTML = data.artikel[i].publisher;
             document.getElementById('imgThumbnail').setAttribute('src', data.artikel[i].book_cover);
-            document.getElementById('contentTitle').innerHTML = 'Buku '+data.artikel[i].title;
-            document.getElementById('contentTaicing').innerHTML = data.artikel[i].taicing;
-            document.getElementById('contentCollection').innerHTML = data.artikel[i].content+appendWritter;
+            document.getElementById('contentTitle').innerHTML = data.artikel[i].title;
+            //document.getElementById('contentTaicing').innerHTML = data.artikel[i].taicing;
+            document.getElementById('contentCollection').innerHTML = appendWritter;
             document.getElementById('captionThumbnail').innerHTML = data.artikel[i].caption_thumbnail;
             
             if(intViewportWidth > 768){
@@ -162,6 +161,7 @@ function updatePage(collection){
                 document.getElementById('base_wrapper').innerHTML = '';
             }
             window.scrollTo(0,0);
+            document.getElementById('contentText').scrollTo(0,0);
         }
     }
 }

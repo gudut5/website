@@ -302,7 +302,9 @@ span.arrow.w32{
 }
 .detail-container h3{
     margin: 0;
+    margin-bottom: 20px;
     font-size: 2em;
+    font-style: italic;
 }
 
 .detail-container h4{
@@ -526,6 +528,7 @@ span.arrow.w32{
     /*display: flex;
     align-items: flex-start;*/
     margin-bottom: 40px;
+    margin-top: 20px;
 }
 .detail-writter img{
     width: 120px;

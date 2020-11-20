@@ -114,7 +114,7 @@ main{
 }
 .cover h1{
     position: absolute;
-    text-align: right;
+    text-align: left;
     text-shadow: 1px 3px 10px #000000;
 }
 .cover h1 .textb{
@@ -171,12 +171,22 @@ main{
     margin: 0;
     margin-bottom: 30px;
 }
-.slide-contents-header p{
-    font-size: 1.8em;
-    line-height: 1em;
-    font-weight: 800;
+.slide-contents-header .quote-text{
+    font-size: 16px;
+    line-height: 1.5em;
+    font-weight: 400;
     margin: 0;
     margin-bottom: 30px;
+}
+.slide-contents-header .quote-text p::before{
+    content: "\201C";
+}
+.slide-contents-header .quote-text p::after{
+    content: "\201D";
+}
+.slide-contents-header .quote-text span{
+    display: block;
+    margin-top: 20px;
 }
 .slide-container-cover{
     overflow: hidden;
@@ -406,11 +416,7 @@ ul.logo-container li{
     list-style: none;
     display: inline;
 }
-.page-pengantar-container{
-    color: #124D58;
-    margin: 0 60px;
-    padding: 40px 0;
-}
+
 .page-pengantar-container h2{
     text-align: center;
     margin: 40px 0;
@@ -537,7 +543,7 @@ ul.logo-container li{
     .slide-contents-header h2{
         font-size: 2.3em;
     }
-    .slide-contents-header p{
+    .slide-contents-header .quote-text{
         font-size: 1.3em;
     }
     .slide-number{
@@ -669,6 +675,11 @@ ul.logo-container li{
         bottom: 0;
         font-size: 18px;
     }
+    .page-pengantar-container{
+        color: #124D58;
+        margin: 0 20px;
+        padding: 40px 0;
+    }
 }
 @media(min-width: 768px){
     .slide-header{
@@ -711,20 +722,22 @@ ul.logo-container li{
         padding: 50px 0;
     }
     .cover h1{
-        width: 500px;
-        margin: 40px 0;
+        width: 600px;
+        margin: 40px;
     }
     .cover h1 .text-h1-1{
         line-height: 1em;
         font-weight: 400;
+        font-size: 24px;
     }
     .cover h1 .text-h1-2{
-        font-size: 3em;
+        font-size: 2.4em;
         line-height: .85em;
     }
     .cover h1 .text-h1-3{
-        font-size: 2em;
+        font-size: 1.7em;
         line-height: 1em;
+        font-weight: 500;
     }
     .cover h1 .text-h1-4{
         font-size: 1.5em;
@@ -754,6 +767,11 @@ ul.logo-container li{
         right: 40px;
         bottom: 0;
         font-size: 18px;
+    }
+    .page-pengantar-container{
+        color: #124D58;
+        margin: 0 60px;
+        padding: 40px 0;
     }
 }
 @media(min-width: 769px){
@@ -823,7 +841,7 @@ ul.logo-container li{
     .slide-contents-header h2{
         font-size: 2.8em;
     }
-    .slide-contents-header p{
+    .slide-contents-header .quote-text{
         font-size: 1.5em;
     }
     .slide-number{
@@ -901,23 +919,23 @@ ul.logo-container li{
         display: block;
     }
     .slide-contents-header{
-        margin-left: 190px;
-        width: 400px;
-        margin-top: 80px;
+        margin-left: 50px;
+        width: 600px;
+        margin-top: 30px;
         position: relative;
         min-height: 400px;
     }
     .slide-contents-text{
-        position: absolute;
+        position: relative;
         z-index: 1;
         margin: 0;
         padding: 0;
     }
     .slide-contents-header h2{
-        font-size: 3.3em;
+        font-size: 2.5em;
     }
-    .slide-contents-header p{
-        font-size: 1.8em;
+    .slide-contents-header .quote-text{
+        font-size: 16px;
     }
     .slide-number{
         font-size: 18em;
