@@ -42,19 +42,19 @@
         "galery":[
           {
             "url": "assets/img/cover/Galeri01-01.jpg",
-            "caption": "Tanda tangan asli Sukarno"
+            "caption": "Halaman Judul:<br>\"Tanda tangan asli Sukarno\"."
           },
           {
             "url": "assets/img/cover/Galeri01-02.jpg",
-            "caption": "Tugas pemimpin. Kepentingan teori. Untuk itu, kursus-kursus saya. (a.y.l. apa imperialisme)  Pengetahuan tentang proses bermasyarakat."
+            "caption": "Halaman 50:<br>\"Tugas pemimpin. Kepentingan teori. Untuk itu, kursus-kursus saya. (a.y.l. apa imperialisme)  Pengetahuan tentang proses bermasyarakat\"."
           },
           {
             "url": "assets/img/cover/Galeri01-03.jpg",
-            "caption": "Membuat rakyat tidak gampang terpengaruh oleh metode ini melalui pengertian dan harapan. Juga: pemimpin yang mempunyai pengetahuan. Kepercayaan kepada partai. Jangan sampai tertanam keyakinan  bahwa partai adalah “kapuk”."
+            "caption": "Halaman 63:<br>\"Membuat rakyat tidak gampang terpengaruh oleh metode ini melalui pengertian dan harapan. Juga: pemimpin yang mempunyai pengetahuan. Kepercayaan kepada partai. Jangan sampai tertanam keyakinan  bahwa partai adalah “kapuk”.\""
           },
           {
             "url": "assets/img/cover/Galeri01-04.jpg",
-            "caption": "Kesempatan untuk berevolusi akan pudar. Pertumbuhan serikat-serikat buruh, karena itu daripada absolutisme kapitalis menjadi “pabrik constitusional”."
+            "caption": "Halaman 79:<br>\"Kesempatan untuk berevolusi akan pudar. Pertumbuhan serikat-serikat buruh, karena itu daripada absolutisme kapitalis menjadi “pabrik constitusional”.\""
           }
         ]
       },
@@ -76,8 +76,16 @@
         "content": "",
         "galery":[
           {
-            "url": "https://picsum.photos/400/300?random=21",
-            "caption": "caption1"
+            "url": "assets/img/cover/Parvus-Cover.jpg",
+            "caption": "Halaman Judul:<br>\"Tanda tangan asli Sukarno.\""
+          },
+          {
+            "url": "assets/img/cover/Parvus-Hal-15.jpg",
+            "caption": "Halaman 15:<br>\"Bagaimana kapital industri menjadi faktor dari kemenangan total dari psike kolonial akhir abad 19 (untuk Holland).\""
+          },
+          {
+            "url": "assets/img/cover/Parvus-Hal-16.jpg",
+            "caption": "Halaman 16:<br>\"Bagaimana kapital industri menjadi faktor dari kemenangan total dari psike kolonial akhir abad 19 (untuk Holland).\""
           }
         ]
       },
