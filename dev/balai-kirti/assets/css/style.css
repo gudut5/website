@@ -638,12 +638,13 @@ ul.logo-container li{
         font-weight: 400;
     }
     .cover h1 .text-h1-2{
-        font-size: 60px;
-        line-height: .85em;
+        font-size: 50px;
+        line-height: .9em;
     }
     .cover h1 .text-h1-3{
-        font-size: 40px;
+        font-size: 30px;
         line-height: 1em;
+        font-weight: 500;
     }
     .cover h1 .text-h1-4{
         font-size: 30px;
