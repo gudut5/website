@@ -79,7 +79,7 @@ function updatePage(collection){
             appendWritter += '<img src="'+data.artikel[i].foto_writer+'" alt="writter">';
             appendWritter += '<div class="detail-writter-content">';
             //appendWritter += '<h4>'+data.artikel[i].writer+'</h4>';
-            appendWritter += data.artikel[i].content;
+            appendWritter += data.artikel[i].description_writer;
             appendWritter += '</div>';
             appendWritter += '</div>';
             appendWritter += '<div class="clear-float"></div>';
