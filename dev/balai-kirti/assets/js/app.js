@@ -43,7 +43,7 @@ function getKoleksi(){
 }
 function drawSlider(){
     var appendText = '';
-    var slideTitle = '', slideDesc = '';
+    var slideTitle = '', slideDesc = '', slideId = '';
     for(i=0;i<data.artikel.length;i++){
         if(data.artikel[i].id > 0){
             appendText += '<div class="item" data-title="'+data.artikel[i].title+'" data-desc="'+data.artikel[i].quote+'">';
@@ -52,11 +52,13 @@ function drawSlider(){
             appendText += '</a>'
             appendText += '</div>'
             if(i==0) {
+                slideId = data.artikel[i].id;
                 slideTitle = data.artikel[i].title;
                 slideDesc = data.artikel[i].quote;
             }
         }
     }
+    document.getElementById('pageTitle').setAttribute('href', 'detail.html?koleksi='+slideId );
     document.getElementById("pageTitle").innerHTML = slideTitle;
     document.getElementById("pageTaicing").innerHTML = slideDesc;
     document.getElementById('base').innerHTML = appendText;
@@ -151,7 +153,8 @@ function setTitle(sliders){
         document.getElementById("numberCollection").innerHTML = indexCurrent;
         document.getElementById('pageTitle').innerHTML = document.querySelector('#base_wrapper .tns-slide-active').getAttribute('data-title');
         document.getElementById("pageTaicing").innerHTML = document.querySelector('#base_wrapper .tns-slide-active').getAttribute('data-desc');
-        document.getElementById('linkSlider').setAttribute('href', 'detail.html?koleksi='+indexCurrent);
+        document.getElementById('linkSlider').setAttribute('href', 'detail.html?koleksi='+indexCurrent );
+        document.getElementById('pageTitle').setAttribute('href', 'detail.html?koleksi='+indexCurrent );
     }, 500);
 }
 const contentScroll = document.getElementById("scrolledTopContent");

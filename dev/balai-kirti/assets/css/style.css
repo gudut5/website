@@ -168,11 +168,12 @@ main{
     background-color: #0E869B;
     color: #ffffff;
 }
-.slide-contents-header h2{
+.slide-contents-header a{
     line-height: 1em;
     font-weight: 800;
     margin: 0;
     margin-bottom: 30px;
+    display: block;
 }
 .slide-contents-header .quote-text{
     font-size: 16px;
@@ -625,7 +626,7 @@ ul.logo-container li{
         margin: 0 20px;
         padding: 20px 0;
     }
-    .slide-contents-header h2{
+    .slide-contents-header a{
         font-size: 2.3em;
     }
     .slide-contents-header .quote-text{
@@ -929,7 +930,7 @@ ul.logo-container li{
         margin: 0;
         padding: 0;
     }
-    .slide-contents-header h2{
+    .slide-contents-header a{
         font-size: 2.8em;
     }
     .slide-contents-header .quote-text{
@@ -1022,7 +1023,7 @@ ul.logo-container li{
         margin: 0;
         padding: 0;
     }
-    .slide-contents-header h2{
+    .slide-contents-header a{
         font-size: 2.5em;
     }
     .slide-contents-header .quote-text{
