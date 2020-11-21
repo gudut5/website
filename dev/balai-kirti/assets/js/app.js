@@ -151,7 +151,7 @@ function setTitle(sliders){
         document.getElementById("numberCollection").innerHTML = indexCurrent;
         document.getElementById('pageTitle').innerHTML = document.querySelector('#base_wrapper .tns-slide-active').getAttribute('data-title');
         document.getElementById("pageTaicing").innerHTML = document.querySelector('#base_wrapper .tns-slide-active').getAttribute('data-desc');
-        
+        document.getElementById('linkSlider').setAttribute('href', 'detail.html?koleksi='+indexCurrent);
     }, 500);
 }
 const contentScroll = document.getElementById("scrolledTopContent");

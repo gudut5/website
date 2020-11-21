@@ -632,11 +632,11 @@ ul.logo-container li{
         font-size: 1.2em;
     }
     .slide-number{
-        font-size: 12em;
+        font-size: 9em;
         font-weight: 800;
         position: absolute;
         right: 0px;
-        top: -80px;
+        top: -60px;
         left: auto;
         color:#124D58;
         line-height: 1em;
