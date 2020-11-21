@@ -36,25 +36,25 @@
         "book_cover": "assets/img/cover/Karl-Kautsky-book.jpg",
         "slide_thumbnail": "assets/img/cover/Der-Weg-Zur-Macht_Karl-Kautsky.jpg",
         "caption_thumbnail": "",
-        "quote": "<p>Dari mulai umur 16 tahun saya sudah pelajari Marxisme. Dan saya mengambil oper banyak sekali daripada ajaran-ajaran itu. Karena itu aku berkata, saya marxis. Tapi di sampingnya itu aku theis. Oleh karena pun dari sejak umur 16 tahun saya sudah ngelesot di kakinya, misalnya almarhum Tjokroaminoto; saya ngelesot di kakinya Kiai Ahmad Dahlan. Kamu orang tahu kiai Ahmad Dahlan itu siapa? Pendiri Muhammadiyah.... Saya pelajari Marxisme itu dari sejak umur 16 tahun. Ini bukan ke-aku-an, bukan aku, aku, tidak! Fakta. Dari sejak umur 16 tahun saya mempelajari Marxisme itu. Malah banyak di dalam pidato saya di di muka Landgerecht Bandung banyak baca kitab Marxis yang saya citeer, yang saya pergunakan dalam perjuangan. Misalnya, kitabnya Karl Kautsky. Karl Kautsky, Der Weg Zur Macht. Bahasa Belandanya De Weg Naar Macht. Karl Kautsky. Kitabnya Karl Kaustky itu boleh dikatakan kadang-kadang, tidur saya bawa. Saking wah, berisikan pengajaran-pengajaran yang tinggi untuk menyusun macht. Bukunya saja namanya Der Weg Zur Macht. De Weg Naar Macht. Dan dia itu salah satu gembong daripada theoritisch en practisch Marxisme.</p><span>(Amanat Bung Karno di Hadapan Para Anggota Angkatan 45 di Istana Merdeka, Jakarta 13 September 1966. Mengutip buku Karl Kautsky, Der Weg Zur Macht)</span>",
+        "quote": "<p>Dari mulai umur 16 tahun saya sudah pelajari Marxisme. Dan saya mengambil oper banyak sekali daripada ajaran-ajaran itu. Karena itu aku berkata, saya marxis. Tapi di sampingnya itu aku theis. Oleh karena pun dari sejak umur 16 tahun saya sudah ngelesot di kakinya, misalnya almarhum Tjokroaminoto; saya ngelesot di kakinya Kiai Ahmad Dahlan. Kamu orang tahu kiai Ahmad Dahlan itu siapa? Pendiri Muhammadiyah.... Saya pelajari Marxisme itu dari sejak umur 16 tahun. Ini bukan ke-aku-an, bukan aku, aku, tidak! Fakta. Dari sejak umur 16 tahun saya mempelajari Marxisme itu. Malah banyak di dalam pidato saya di muka Landgerecht Bandung banyak baca kitab Marxis yang saya citeer, yang saya pergunakan dalam perjuangan. Misalnya, kitabnya Karl Kautsky. Karl Kautsky, Der Weg Zur Macht. Bahasa Belandanya De Weg Naar Macht. Karl Kautsky. Kitabnya Karl Kaustky itu boleh dikatakan kadang-kadang, tidur saya bawa. Saking wah, berisikan pengajaran-pengajaran yang tinggi untuk menyusun macht. Bukunya saja namanya Der Weg Zur Macht. De Weg Naar Macht. Dan dia itu salah satu gembong daripada theoritisch en practisch Marxisme.</p><span>(Amanat Bung Karno di Hadapan Para Anggota Angkatan 45 di Istana Merdeka, Jakarta 13 September 1966. Mengutip buku Karl Kautsky, Der Weg Zur Macht)</span>",
         "taicing": "Karl Kautsky (16 Oktober 1854-17 Oktober 1938) dikenal sebagai ahli teori Marxisme berdarah Yahudi. Setelah masuk University of Vienna untuk mempelajari ekonomi, filsafat, dan sejarah, dia bergabung dengan Partai Sosial Demokrat Austria sebelum pindah ke Jerman dan masuk ke Partai Sosial Demokrat Jerman",
         "content":"",
         "galery":[
           {
-            "url": "assets/img/cover/Galeri01-01.jpg",
-            "caption": "Halaman Judul:<br>\"Tanda tangan asli Sukarno\"."
+            "url": "assets/img/cover/Galeri-01.jpg",
+            "caption": "<b>Halaman Judul:</b><br>\"Tanda tangan asli Sukarno\"."
           },
           {
-            "url": "assets/img/cover/Galeri01-02.jpg",
-            "caption": "Halaman 50:<br>\"Tugas pemimpin. Kepentingan teori. Untuk itu, kursus-kursus saya. (a.y.l. apa imperialisme)  Pengetahuan tentang proses bermasyarakat\"."
+            "url": "assets/img/cover/Galeri-02.jpg",
+            "caption": "<b>Halaman 50:</b><br>\"Tugas pemimpin. Kepentingan teori. Untuk itu, kursus-kursus saya. (a.y.l. apa imperialisme)  Pengetahuan tentang proses bermasyarakat\"."
           },
           {
-            "url": "assets/img/cover/Galeri01-03.jpg",
-            "caption": "Halaman 63:<br>\"Membuat rakyat tidak gampang terpengaruh oleh metode ini melalui pengertian dan harapan. Juga: pemimpin yang mempunyai pengetahuan. Kepercayaan kepada partai. Jangan sampai tertanam keyakinan  bahwa partai adalah “kapuk”.\""
+            "url": "assets/img/cover/Galeri-03.jpg",
+            "caption": "<b>Halaman 63:</b><br>\"Membuat rakyat tidak gampang terpengaruh oleh metode ini melalui pengertian dan harapan. Juga: pemimpin yang mempunyai pengetahuan. Kepercayaan kepada partai. Jangan sampai tertanam keyakinan  bahwa partai adalah “kapuk”.\""
           },
           {
-            "url": "assets/img/cover/Galeri01-04.jpg",
-            "caption": "Halaman 79:<br>\"Kesempatan untuk berevolusi akan pudar. Pertumbuhan serikat-serikat buruh, karena itu daripada absolutisme kapitalis menjadi “pabrik constitusional”.\""
+            "url": "assets/img/cover/Galeri-04.jpg",
+            "caption": "<b>Halaman 79:</b><br>\"Kesempatan untuk berevolusi akan pudar. Pertumbuhan serikat-serikat buruh, karena itu daripada absolutisme kapitalis menjadi “pabrik constitusional”.\""
           }
         ]
       },
