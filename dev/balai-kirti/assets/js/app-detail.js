@@ -6,10 +6,11 @@ var data;
 var intViewportWidth = window.innerWidth;
 var numberElement = document.querySelector('#numberCollection');
 var coverImg = document.getElementById('imgSrc');
-var totalCollection = 25;
+var totalCollection = 16;
 var slidersZoom = new Object()
 document.addEventListener('DOMContentLoaded', function() {
     if(!isNaN(parseInt(myParam))) selectedCollection = parseInt(myParam);
+    if(parseInt(myParam) > totalCollection) selectedCollection = 1;
     getKoleksi(selectedCollection)
 });
 const content = document.getElementById("barPosition");

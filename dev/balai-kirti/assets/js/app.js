@@ -45,14 +45,16 @@ function drawSlider(){
     var appendText = '';
     var slideTitle = '', slideDesc = '';
     for(i=0;i<data.artikel.length;i++){
-        appendText += '<div class="item" data-title="'+data.artikel[i].title+'" data-desc="'+data.artikel[i].quote+'">';
-        appendText += '<a href="detail.html?koleksi='+data.artikel[i].id+'">'
-        appendText += '<img src="'+data.artikel[i].slide_thumbnail+'" alt="thumbnail-'+data.artikel[i].id+'">'
-        appendText += '</a>'
-        appendText += '</div>'
-        if(i==0) {
-            slideTitle = data.artikel[i].title;
-            slideDesc = data.artikel[i].quote;
+        if(data.artikel[i].id > 0){
+            appendText += '<div class="item" data-title="'+data.artikel[i].title+'" data-desc="'+data.artikel[i].quote+'">';
+            appendText += '<a href="detail.html?koleksi='+data.artikel[i].id+'">'
+            appendText += '<img src="'+data.artikel[i].slide_thumbnail+'" alt="thumbnail-'+data.artikel[i].id+'">'
+            appendText += '</a>'
+            appendText += '</div>'
+            if(i==0) {
+                slideTitle = data.artikel[i].title;
+                slideDesc = data.artikel[i].quote;
+            }
         }
     }
     document.getElementById("pageTitle").innerHTML = slideTitle;
