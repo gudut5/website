@@ -92,7 +92,8 @@ function drawSlider(){
         indexCurrent = info.index+1;
         document.getElementById("numberCollection").innerHTML = indexCurrent;
         clearTimeout(loadTitle);
-        setTitle(sliders) 
+        setTitle(sliders);
+        scrollToTop();
     }
     document.getElementById("next").onclick = function(){
         var numberCollection = document.getElementById("numberCollection").innerText;
@@ -104,7 +105,8 @@ function drawSlider(){
         indexCurrent = info.index+1;
         document.getElementById("numberCollection").innerHTML = indexCurrent;
         clearTimeout(loadTitle);
-        setTitle(sliders) 
+        setTitle(sliders);
+        scrollToTop();
     }       
     document.addEventListener('touchend', handleTouchMove, false);                                                   
     document.addEventListener('mousemove', handleTouchMove, false);                                          
@@ -147,13 +149,30 @@ function setTitle(sliders){
         document.getElementById("numberCollection").innerHTML = indexCurrent;
         document.getElementById('pageTitle').innerHTML = document.querySelector('#base_wrapper .tns-slide-active').getAttribute('data-title');
         document.getElementById("pageTaicing").innerHTML = document.querySelector('#base_wrapper .tns-slide-active').getAttribute('data-desc');
-        //var intViewportWidth = window.innerWidth;
-        //if(intViewportWidth < 768){
-        //    var target = document.getElementById("scrolledTop");
-        //    animate(document.scrollingElement || document.documentElement, "scrollTop", "", 2000, target.offsetTop, 100, true);  
-        //}
         
     }, 500);
+}
+const contentScroll = document.getElementById("scrolledTopContent");
+const content = document.getElementById("scrolledTop");
+const barNav = document.getElementById("slideNav");
+document.addEventListener("scroll", (e) => {
+
+  var scrolled = document.scrollingElement.scrollTop;
+  var heightSlider = document.querySelector(".slide-container").offsetHeight - 120;
+  var position = content.offsetTop + heightSlider;
+  if(scrolled > position){
+    barNav.classList.add('fixedBar');
+  }else{
+    barNav.classList.remove('fixedBar');
+  }
+});
+function scrollToTop(){
+    var positionScroll = contentScroll.offsetTop;
+    var intViewportWidth = window.innerWidth;
+    if(intViewportWidth < 768){
+        var target = document.getElementById("scrolledTopContent");
+        animate(document.scrollingElement || document.documentElement, "scrollTop", "", positionScroll, target.offsetTop, 100, true);  
+    }
 }
 function drawList(){
     var appendText = '';
