@@ -176,20 +176,22 @@ main{
 }
 .slide-contents-header .quote-text{
     font-size: 16px;
-    line-height: 1.5em;
+    line-height: 1.7em;
     font-weight: 400;
     margin: 0;
     margin-bottom: 30px;
 }
-.slide-contents-header .quote-text p::before{
+/*.slide-contents-header .quote-text p::before{
     content: "\201C";
 }
 .slide-contents-header .quote-text p::after{
     content: "\201D";
-}
+}*/
 .slide-contents-header .quote-text span{
     display: block;
     margin-top: 20px;
+    font-size: 15px;
+    line-height: 1.6em;
 }
 .slide-contents-header .quote-text p{
     font-style: italic;
@@ -509,6 +511,15 @@ ul.logo-container li{
     width: 100%;
     height: 100%;
     display: block;
+}
+.base-bg{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 1;
 }
 @media(max-width: 480px){
     header{

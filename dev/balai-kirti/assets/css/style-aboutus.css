@@ -256,6 +256,7 @@ ul.logo-container li{
     display: inline;
     text-decoration-thickness: 2px;
     text-underline-position: under;
+    word-wrap: break-word;
 }
 @media(max-width: 480px){
     header{
