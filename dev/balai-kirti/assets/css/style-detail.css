@@ -263,6 +263,7 @@ span.arrow.w32{
     font-size: 1.2em;
     display: flex;
     line-height: 1.6em;
+    font-weight: 500;
 }
 .detail-cover-text .label{
     width: 80px;
