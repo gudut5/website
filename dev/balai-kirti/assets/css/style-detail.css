@@ -503,6 +503,7 @@ span.arrow.w32{
     position: absolute;
     bottom: 4px;
     left: 0;
+    line-height: 1.5;
 }
 .overlay-zoom .item span{
     width: 100vw;
@@ -895,7 +896,7 @@ h3.quote::after{
         width: 300px;
     }
     #contentText{
-        height: 320px;
+        height: 390px;
         overflow-x: hidden;
         overflow-y: scroll;
         box-sizing: content-box;
