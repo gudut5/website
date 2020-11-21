@@ -580,7 +580,8 @@ ul.logo-container li{
         margin-top: 20px;
     }
     .slide-contents{
-        display: block;
+        display: flex;
+        flex-direction: column-reverse;
     }
     .slide-container{
         position: relative;
@@ -616,11 +617,11 @@ ul.logo-container li{
         font-size: 1.3em;
     }
     .slide-number{
-        font-size: 17em;
+        font-size: 12em;
         font-weight: 800;
         position: absolute;
-        right: 20px;
-        top: -150px;
+        right: 0px;
+        top: -80px;
         left: auto;
         color:#124D58;
         line-height: 1em;
@@ -634,13 +635,18 @@ ul.logo-container li{
     .slide-nav-container{
         position: absolute;
         z-index: 2;
-        top: 50px;
-        bottom: auto;
+        top: auto;
+        bottom: 0;
         left: auto;
         right: 30px;
     }
     .slide-nav{
         position: static;
+    }
+    .slide-nav.fixedBar .slide-nav-container{
+        position: fixed;
+        top: 50px;
+        z-index: 9;
     }
     .list-collection .list-cover{
         width: 100px;
