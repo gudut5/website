@@ -219,8 +219,8 @@ span.arrow.w32{
     position: relative;
 }
 .cover img{
-    min-width: 100%;
-    min-height: 100%;
+    width: 100%;
+    min-height: 0;
 }
 .cover-header{
     position: absolute;
@@ -596,6 +596,7 @@ h3.quote::after{
     #barPosition.only-mobile{
         height: 60px;
         display: block;
+        margin-top: -5px;
     }
     .bottom-bar.only-mobile{
         display: flex;
@@ -647,7 +648,8 @@ h3.quote::after{
         padding: 20px 10px;
     }
     .cover{
-        height: 100vw;
+        height: auto;
+        width: 100%;
     }
     .detail-layout-left{
         margin-top: 20px;
@@ -721,7 +723,8 @@ h3.quote::after{
         bottom: auto;
     }
     .cover{
-        height: 540px;
+        height: auto;
+        width: 100%;
     }
     .detail-layout-left{
         bottom: -20px;
@@ -803,6 +806,7 @@ h3.quote::after{
     }
     .detail-container h2{
         margin-top: 8px;
+        
     }
     
     .logo-container{
@@ -836,6 +840,7 @@ h3.quote::after{
         display: flex;
         margin-bottom: 0;
         width: auto;
+        margin-top: -5px;
     }
     .detail-content,
     .detail-header-orange{
