@@ -217,6 +217,7 @@ span.arrow.w32{
     object-fit: contain;
     object-position: center;
     position: relative;
+    background-color: #000000;
 }
 .cover img{
     width: 100%;
@@ -259,7 +260,7 @@ span.arrow.w32{
     text-transform: uppercase;
 }
 .detail-cover-text {
-    font-size: 1em;
+    font-size: 1.2em;
     display: flex;
     line-height: 1.6em;
 }
