@@ -472,20 +472,38 @@
       },
       {
         "id": 16,
-        "date_published": "",
-        "writer": "24",
-        "foto_writer": "https://picsum.photos/300/300?random=1",
+        "date_published": "1925",
+        "writer": "H.T. Colenbrander",
+        "foto_writer": "assets/img/cover/HT-Colenbrander-oke.jpg",
         "description_writer": "",
-        "publisher": "24",
-        "title": "24",
-        "cover_desktop": "https://picsum.photos/1015/540?random=24",
-        "cover_mobile": "https://picsum.photos/540/540?random=24",
-        "book_cover": "https://picsum.photos/400/600?random=2",
-        "slide_thumbnail": "https://picsum.photos/400/600?random=24",
+        "publisher": "",
+        "title": "Koloniale Geschiedenis",
+        "cover_desktop": "assets/img/cover/COLENBRANDER-DESKTOP.jpg",
+        "cover_mobile": "assets/img/cover/COLENBRANDER-MOBILE.jpg",
+        "book_cover": "assets/img/cover/Koloniale_Geshiendenis--HT_Colenbrander.jpg",
+        "slide_thumbnail": "assets/img/cover/Koloniale-Geshiendenis__HT._Colenbrander.jpg",
         "caption_thumbnail": "",
-        "quote": "<p>“”</p>",
+        "quote": "<p>“Oleh karena itu, sekali lagi, maafkanlah berhubung dengan cultuurstelsel itu, kami mengulangi pendapat-pendapat satu dua kaum intelektual Eropa yang ternama: “Kompeni itu mengusai raja-raja dan kaum bangsawan dan membebaninya dengan kewajiban-kewajiban, yang oleh mereka itu dijatuhkannya lagi diatas pundak rakyat. Kompeni itu lebih rendah serakah daripada kejam, tetapi akibatnya adalah sama: Penindasan!”, begitulah Prof. Colenbrander menulis dan Prof. Veth berkata: “Kekejaman tidak menjadi sifat jeleknya yang biasa tetapi……keserakahannya yang picik barangkali lebih banyak merusak daripada kekejamannya. Bahkan kebuasan Nero hanya mencelakakan sedikit orang yang berdekatana dengan dia, kesejahteraan propinsi-propinsi tidak diganggu-gugatnya; tapi suatu pemerintahan yang jelek peraturannya, adalah suatu bencana umum Jadi, tidak selamanya “kejam”, tidak selamanya “wreed” ? Tetapi toh sering kejam dan buas. Marilah kita bacakan lagi Colenbrander tentang penaman monopoli di Ambon dan Banda: “Coen (Jan Pieterszoon Coen, Sk.) didalam seluruh perkara ini, yang menodai namanya, telah bertindak dengan kelemahan yang meluar batas kemanusiaan, kekejaman yang kelewatan bahkan dalam mata hamba-hamba Kompeni sendiri……. Sampai-sampai Kuasa-kuasa Kompeni pun sama terkejut membaca cerita-cerita hukuman mati yang diceritakan dengan tenang oleh Coen didalam surat-suratnya….”Itu benar membikin takut, tapi tidak menerbitkan kasih”…”</p><span>(Bung Karno mengutip Koloniale Geschiedenis  karya Dr. H.T. Colenbrander dalam pidato pembelaannya di muka hakim kolonial Landraad, Bandung, 1930)</span>",
         "taicing": "",
-        "content": ""
+        "content": "",
+        "galery":[
+          {
+            "url": "assets/img/cover/Koloniale Geschiedenis. H.T. Colenbrander-galeri-01.jpg",
+            "caption": "<b>Halaman Judul:</b><br>\"Tanda tangan asli Sukarno.\""
+          },
+          {
+            "url": "assets/img/cover/Koloniale Geschiedenis. H.T. Colenbrander-galeri-02.jpg",
+            "caption": "<b>Halaman 10:</b><br>\"Tidak menghiraukan liberalisme oleh Capellen, dia tahan dengan tanaman paksa.\"<br>\"Fase keempat dari imperialisme belum lahir saat itu.\""
+          },
+          {
+            "url": "assets/img/cover/Koloniale Geschiedenis. H.T. Colenbrander-galeri-03.jpg",
+            "caption": "<b>Halaman 13:</b><br>\"Pencobaan untuk menstimulasi industri tekstil Belanda dan membunuh persaingan Inggris.\"<br>\"Fase ketiga dari imperialisme.\""
+          },
+          {
+            "url": "assets/img/cover/Colenbrander-galeri.jpg",
+            "caption": "<b>Halaman 179:</b><br>Residensi Bali dan Lombok. Terus-menurus masalah dengan kerajaan lain."
+          }
+        ]
       },
       {
         "id": "x5",
