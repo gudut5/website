@@ -587,6 +587,59 @@ h3.quote::after{
     content: "\201E";
     font-size: 2em;
 }
+ul.logo-container{
+    padding: 0;
+    margin: 0;
+}
+ul.logo-container li{
+    list-style: none;
+    display: inline;
+}
+footer a.icon-socmed{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border-radius: 3px;
+    background-color: #eeeeee;
+    color: #515349;
+    overflow: hidden;
+    position: relative;
+    margin-right: 5px;
+}
+footer a.icon-socmed.facebook svg{
+    top: 4px;
+    left: 0;
+}
+footer{
+    text-align: center;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    font-size: 13px;
+}
+footer a.icon-socmed-link{
+    margin-right: 10px;
+    margin-left: 5px;
+}
+a.icon-socmed svg{
+    position: absolute;
+}
+a.icon-socmed.twitter svg{
+    left: 2px;
+    top: 3px;
+}
+a.icon-socmed.instagram svg{
+    top: 3px;
+    left: 2px;
+}
+a.icon-socmed.youtube svg{
+    top: 3px;
+    left: 2px;
+}
+a.icon-socmed{
+    margin: 17px 2px;
+}
 @media(max-width: 480px){
     header{
         position: relative;

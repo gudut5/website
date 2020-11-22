@@ -246,12 +246,14 @@ a.icon-socmed{
     overflow: hidden;
     position: relative;
 }
+
 a.icon-socmed svg{
     position: absolute;
 }
 a.icon-socmed.facebook svg{
     top: 3px;
 }
+
 a.icon-socmed.twitter svg{
     left: 2px;
     top: 3px;
@@ -446,10 +448,12 @@ span.arrow.w48{
 .cover .tns-controls button:nth-child(1){
     left: 0;
     top: 50%;
+    margin-top: -25px;
 }
 .cover .tns-controls button:nth-child(2){
     right: 0;
     top: 50%;
+    margin-top: -25px;
 }
 .cover .tns-controls:checked,
 .cover .tns-controls:focus{
@@ -541,6 +545,33 @@ ul.logo-container li{
     color: #0E869B;
     margin-top: 80px;
     display: inline-block;
+}
+footer a.icon-socmed{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border-radius: 3px;
+    background-color: #eeeeee;
+    color: #515349;
+    overflow: hidden;
+    position: relative;
+    margin-right: 5px;
+}
+footer a.icon-socmed.facebook svg{
+    top: 4px;
+    left: 0;
+}
+footer{
+    text-align: center;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    font-size: 13px;
+}
+footer a.icon-socmed-link{
+    margin-right: 10px;
+    margin-left: 5px;
 }
 @media(max-width: 480px){
     header{
@@ -749,7 +780,7 @@ ul.logo-container li{
         font-weight: 400;
     }
     .cover h1 .text-h1-2{
-        font-size: 50px;
+        font-size: 40px;
         line-height: .9em;
     }
     .cover h1 .text-h1-3{
@@ -835,7 +866,7 @@ ul.logo-container li{
     }
     .cover h1{
         width: 600px;
-        margin: 80px 40px;
+        margin: 80px 60px;
     }
     .cover h1 .text-h1-1{
         line-height: 1em;
