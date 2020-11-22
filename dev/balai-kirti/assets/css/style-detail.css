@@ -8,7 +8,8 @@ body{
     font-size: 1rem;
     font-weight: 400;
     color: #ffffff;
-    font-family: 'Roboto', sans-serif;
+    /*font-family: 'Roboto', sans-serif;*/
+    font-family: 'Open Sans',sans-serif;
 }
 body.fixedWH{
     width: 100vw;
@@ -263,7 +264,7 @@ span.arrow.w32{
     font-size: 1.2em;
     display: flex;
     line-height: 1.6em;
-    font-weight: 500;
+    font-weight: 600;
 }
 .detail-cover-text .label{
     width: 80px;
@@ -303,8 +304,7 @@ span.arrow.w32{
     margin-bottom: 10px;
 }
 .detail-container h3{
-    margin: 0;
-    margin-bottom: 20px;
+    margin: 20px 0;
     font-size: 2em;
     font-style: italic;
 }
@@ -319,7 +319,6 @@ span.arrow.w32{
     font-weight: 900;
     opacity: .9;
     color: #0DA1BA50;
-    top: -30px;
     margin: 0;
     padding: 0;
     letter-spacing: -20px;
@@ -481,6 +480,9 @@ span.arrow.w32{
 #contentText{
     width: 100%;
 }
+#contentText #contentTitle{
+    font-family: 'Libre Baskerville', serif;
+}
 .overlay-zoom .item,
 #base_wrapper .item{
     position: relative;
@@ -532,9 +534,9 @@ span.arrow.w32{
     margin-top: 20px;
 }
 .detail-writter img{
-    width: 120px;
-    padding-right: 10px;
-    padding-bottom: 10px;
+    width: 140px;
+    margin-right: 15px;
+    margin-bottom: 5px;
     float: left;
 }
 .detail-writter h4{
@@ -645,7 +647,7 @@ h3.quote::after{
         bottom: 0;
         left: 0;
         width: 100%;
-        font-size: .9em;
+        font-size: .91em;
         background-color: rgba(255,255,255,0.3);
         padding: 20px 10px;
     }
@@ -717,10 +719,10 @@ h3.quote::after{
     .detail-cover-right-text{
         position: relative;
         z-index: 3;
-        top: 200px;
+        top: 70px;
         left: -50px;
         width: 300px;
-        font-size: .85em;
+        font-size: 1em;
         line-height: 1.5em;
         bottom: auto;
     }
@@ -832,6 +834,7 @@ h3.quote::after{
     }
     .detail-number{
         font-size: 9em;
+        top: -30px;
     }
 }
 @media(min-width: 768px){
@@ -886,7 +889,7 @@ h3.quote::after{
     }
     .bodyText{
         font-size: .9em;
-        line-height: 1.7em;
+        line-height: 1.5em;
     }
     .tns-controls{
         top: auto;
@@ -894,6 +897,7 @@ h3.quote::after{
     }
     .detail-container h3{
         width: 300px;
+        line-height: 1.1em;
     }
     .detail-container h4{
         width: 300px;
@@ -931,6 +935,7 @@ h3.quote::after{
     }
     .detail-number{
         font-size: 15em;
+        top: -80px;
     }
 }
 @media(min-width: 480px) and (max-width: 769px){

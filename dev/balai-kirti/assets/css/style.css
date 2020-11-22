@@ -11,7 +11,8 @@ body{
     font-size: 1rem;
     font-weight: 400;
     color: #ffffff;
-    font-family: 'Roboto', sans-serif;
+    /*font-family: 'Roboto', sans-serif;*/
+    font-family: 'Open Sans',sans-serif;
 }
 a{
     text-decoration: none;
@@ -127,6 +128,12 @@ main{
 .cover h1 .text-h1-2{
     color: #F17800;
     display: inline-block;
+    font-family: 'Libre Baskerville', serif;
+}
+.cover h1 .text-h1-3,
+.cover h1 .text-h1-4{
+    font-family: 'Libre Baskerville', serif;
+    font-weight: 400;
 }
 .cover img{
     min-width: 100%;
@@ -171,14 +178,16 @@ main{
 }
 .slide-contents-header a{
     line-height: 1em;
-    font-weight: 800;
+    font-weight: 400;
     margin: 0;
     margin-bottom: 30px;
     display: block;
+    font-family: 'Libre Baskerville', serif;
+    font-style: italic;
 }
 .slide-contents-header .quote-text{
     font-size: 16px;
-    line-height: 1.7em;
+    line-height: 1.5em;
     font-weight: 400;
     margin: 0;
     margin-bottom: 30px;
@@ -490,12 +499,17 @@ ul.logo-container li{
     margin: 40px 0;
     margin-top: 0;
     font-size: 3em;
-    font-weight: 500;
+    font-weight: 400;
+    font-family: 'Libre Baskerville', serif;
 }
 .page-pengantar-container p{
     font-size: 1.1em;
     margin-bottom: 20px;
-    line-height: 1.7em;
+    line-height: 1.5em;
+}
+.pengantar-width h2{
+    font-family: 'Libre Baskerville', serif;
+    line-height: 1.1em;
 }
 .logo-home{
     position: absolute;
@@ -522,6 +536,11 @@ ul.logo-container li{
     left: 0;
     top: 0;
     z-index: 1;
+}
+.pengantar-back a{
+    color: #0E869B;
+    margin-top: 80px;
+    display: inline-block;
 }
 @media(max-width: 480px){
     header{
@@ -821,19 +840,19 @@ ul.logo-container li{
     .cover h1 .text-h1-1{
         line-height: 1em;
         font-weight: 400;
-        font-size: 24px;
+        font-size: 22px;
     }
     .cover h1 .text-h1-2{
-        font-size: 2.4em;
-        line-height: .85em;
+        font-size: 1.8em;
+        line-height: 1em;
     }
     .cover h1 .text-h1-3{
-        font-size: 1.7em;
+        font-size: 1.4em;
         line-height: 1em;
         font-weight: 500;
     }
     .cover h1 .text-h1-4{
-        font-size: 1.5em;
+        font-size: 1.2em;
         line-height: 1em;
     }
     .pengantar-width{
@@ -842,7 +861,7 @@ ul.logo-container li{
         justify-content: space-between;
     }
     .pengantar-width .pengantar-text{
-        padding: 20px 40px;
+        padding: 10px 40px;
         padding-bottom: 40px;
         font-size: 18px;
         line-height: 1.5em;
@@ -852,6 +871,7 @@ ul.logo-container li{
         text-align: right;
         color: #F17800;
         font-size: 47px;
+        font-weight: 400;
     }
     .pengantar-text a{
         color: #0E869B;
