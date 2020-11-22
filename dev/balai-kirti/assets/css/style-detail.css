@@ -617,6 +617,7 @@ footer{
     justify-content: center;
     align-items: center;
     font-size: 13px;
+    background-color: #000000;
 }
 footer a.icon-socmed-link{
     margin-right: 10px;
@@ -800,7 +801,7 @@ a.icon-socmed{
     }
     .detail-container{
         display: block;
-        margin-bottom: -90px;
+        margin-bottom: 0;
         width: 100vw;
     }
     .detail-content,
