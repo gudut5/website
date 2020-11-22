@@ -604,6 +604,12 @@ footer a.icon-socmed-link{
 .right-img-pengantar img{
     width: 100%;
 }
+.slide-contents-header a.next-link-slide{
+    display: inline-block;
+    font-style: normal;
+    font-family: 'Open Sans',sans-serif;
+    margin-bottom: 80px;
+}
 @media(max-width: 480px){
     header{
         position: relative;
@@ -875,6 +881,9 @@ footer a.icon-socmed-link{
     .pengantar-back a{
         font-size: 1.1em;
     }
+    .slide-contents-header a.next-link-slide{
+        font-size: 1.2em;
+    }
 }
 @media(min-width: 768px){
     .slide-header{
@@ -986,6 +995,9 @@ footer a.icon-socmed-link{
         text-align: center;
     }
     .pengantar-back a{
+        font-size: 1em;
+    }
+    .slide-contents-header a.next-link-slide{
         font-size: 1em;
     }
 }
@@ -1249,6 +1261,7 @@ footer a.icon-socmed-link{
     main{
         margin: 58px;
         margin-top: 0;
+        margin-bottom: 0;
         width: auto;
     }
     .welcome-text, nav ul{

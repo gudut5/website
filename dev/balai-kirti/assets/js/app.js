@@ -155,6 +155,7 @@ function setTitle(sliders){
         document.getElementById("pageTaicing").innerHTML = document.querySelector('#base_wrapper .tns-slide-active').getAttribute('data-desc');
         document.getElementById('linkSlider').setAttribute('href', 'detail.html?koleksi='+indexCurrent );
         document.getElementById('pageTitle').setAttribute('href', 'detail.html?koleksi='+indexCurrent );
+        document.getElementById('linkSliderBottom').setAttribute('href', 'detail.html?koleksi='+indexCurrent );
     }, 500);
 }
 const contentScroll = document.getElementById("scrolledTopContent");
