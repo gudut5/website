@@ -119,6 +119,7 @@ main{
     z-index: 2;
     text-align: left;
     text-shadow: 1px 3px 10px #000000;
+    bottom: 20px;
 }
 .cover h1 .textb{
     display: block;
