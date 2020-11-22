@@ -791,6 +791,7 @@ h3.quote::after{
     }
     .detail-container h3{
         width: auto;
+        line-height: 1em;
     }
     .detail-container h4{
         width: auto;
