@@ -617,14 +617,17 @@ footer{
     justify-content: center;
     align-items: center;
     font-size: 13px;
-    background-color: #000000;
+    background-color: #fff;
+    color: #222222;
 }
 footer a.icon-socmed-link{
     margin-right: 10px;
     margin-left: 5px;
+    color: #222222;
 }
 a.icon-socmed svg{
     position: absolute;
+    fill: #222222;
 }
 a.icon-socmed.twitter svg{
     left: 2px;
@@ -890,6 +893,16 @@ a.icon-socmed{
         font-size: 9em;
         top: -30px;
     }
+    footer{
+        background-color: #eeeeee;
+        color: #222222;
+    }
+    footer a.icon-socmed-link{
+        color: #222222;
+    }
+    a.icon-socmed svg{
+        fill: #222222;
+    }
 }
 @media(min-width: 768px){
     .bg-black{
@@ -990,6 +1003,16 @@ a.icon-socmed{
     .detail-number{
         font-size: 15em;
         top: -80px;
+    }
+    footer{
+        background-color: #000000;
+        color: #ffffff;
+    }
+    footer a.icon-socmed-link{
+        color: #ffffff;
+    }
+    a.icon-socmed svg{
+        fill: #000000;
     }
 }
 @media(min-width: 480px) and (max-width: 769px){

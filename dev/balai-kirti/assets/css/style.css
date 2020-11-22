@@ -500,7 +500,6 @@ ul.logo-container li{
 }
 
 .page-pengantar-container h2{
-    text-align: center;
     margin: 40px 0;
     margin-top: 0;
     font-weight: 400;
@@ -840,7 +839,7 @@ footer a.icon-socmed-link{
     .pengantar-width h2{
         text-align: left;
         color: #F17800;
-        font-size: 37px;
+        font-size: 33px;
     }
     .pengantar-text a{
         color: #0E869B;
@@ -857,16 +856,24 @@ footer a.icon-socmed-link{
     }
     .left-img-pengantar{
         width: 100%;
+        margin-bottom: 20px;
+        margin-top: 0;
         margin-left: 0;
         margin-right: 0;
     }
     .right-img-pengantar{
         width: 100%;
+        margin-bottom: 20px;
+        margin-top: 0;
         margin-right: 0;
         margin-left: 0;
     }
     .page-pengantar-container h2{
-        font-size: 2.5em;
+        font-size: 2em;
+        text-align: left;
+    }
+    .pengantar-back a{
+        font-size: 1.1em;
     }
 }
 @media(min-width: 768px){
@@ -964,16 +971,22 @@ footer a.icon-socmed-link{
     }
     .left-img-pengantar{
         width: 400px;
+        margin: 0;
         margin-right: 30px;
         margin-left: -119px;
     }
     .right-img-pengantar{
         width: 400px;
+        margin: 0;
         margin-right: -119px;
         margin-left: 30px;
     }
     .page-pengantar-container h2{
         font-size: 3em;
+        text-align: center;
+    }
+    .pengantar-back a{
+        font-size: 1em;
     }
 }
 @media(min-width: 769px){
