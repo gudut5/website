@@ -608,7 +608,6 @@ footer a.icon-socmed-link{
     display: inline-block;
     font-style: normal;
     font-family: 'Open Sans',sans-serif;
-    margin-bottom: 80px;
 }
 @media(max-width: 480px){
     header{
@@ -884,6 +883,9 @@ footer a.icon-socmed-link{
     .slide-contents-header a.next-link-slide{
         font-size: 1.2em;
     }
+    .slide-contents-header a.next-link-slide{
+        margin-bottom: 40px;
+    }
 }
 @media(min-width: 768px){
     .slide-header{
@@ -999,6 +1001,9 @@ footer a.icon-socmed-link{
     }
     .slide-contents-header a.next-link-slide{
         font-size: 1em;
+    }
+    .slide-contents-header a.next-link-slide{
+        margin-bottom: 80px;
     }
 }
 @media(min-width: 769px){
