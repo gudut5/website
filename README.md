@@ -1,4 +1,4 @@
-## Welcome to GitHub Pages
+## Welcome to GitHub Pages Edited from Project IDX
 
 You can use the [editor on GitHub](https://github.com/yudha-gudut5-com/website/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
 
